@@ -176,8 +176,8 @@ fig1=plt.legend(loc='center right')
 
 ax2=ax1.twinx()
 
-ax2.set_ylabel('Poussée specifique ', color=color)
-ax2.plot(array_t_max,array_specific,'k',label='Poussé specifique')
+ax2.set_ylabel('Poussée spécifique (m/s)', color=color)
+ax2.plot(array_t_max,array_specific,'k',label='Poussée spécifique')
 
 fig1=plt.legend(loc='upper right')
 

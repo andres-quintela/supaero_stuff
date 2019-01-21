@@ -52,7 +52,7 @@ array_total=[]
 
 
 
-for r_comp in np.linspace(20,80,100):
+for r_comp in np.linspace(5,80,100):
 	
 
 	#intake
@@ -171,12 +171,12 @@ ax1.set_xlabel('Taux de compression')
 ax1.set_ylabel('Rendements ', color=color)
 ax1.tick_params(axis='y', labelcolor=color)
 
-fig1=plt.legend(loc='center left')
+fig1=plt.legend(loc='upper right')
 
 ax2=ax1.twinx()
 
-ax2.set_ylabel('Poussée specifique ', color=color)
-ax2.plot(array_t_max,array_specific,'k',label='Poussé specifique')
+ax2.set_ylabel('Poussée spécifique (m/s)', color=color)
+ax2.plot(array_t_max,array_specific,'k',label='Poussée spécifique')
 
 fig1=plt.legend(loc='center right')
 
