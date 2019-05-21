@@ -1,0 +1,20 @@
+{
+
+"number_of_time_steps" : 4 ,  //positive integer
+"time_step_duration" : 60 ,    //minutes
+
+"electricity_prices" :  [ 15, 15 , 15, 15 ] , //euros/MWh
+
+"thermal_plants" :
+[
+{
+ "name" : "thf1" ,
+ "production_levels" : [ 100, 200, 300 ] , //MW
+ "proportionnal_cost" : 10.0 , // euros/MWh
+ "startup_cost" : 800.0 , // euros
+ "maximum_increase_rate" : 100.0 ,  // MW/h
+ "maximum_decrease_rate" : 100.0   //MW/h
+}
+]
+
+}

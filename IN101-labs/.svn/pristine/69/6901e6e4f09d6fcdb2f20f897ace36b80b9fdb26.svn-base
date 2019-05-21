@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "sokoban.h"
+#include "loader.h"
+
+
+
+
+int main(void) {
+
+
+	//define input and comparison file sizes
+	
+	char input_map[21];
+	char output_map[23];
+	char directions[4]= "EWNS";
+	
+	
+	FILE* in_map = NULL;
+	FILE* result_map = NULL;
+	
+	
+	
+	
+    
+    game_map *map_struct=load(p_file);
+    
+    print_map(map_struct);
+    
+    game_map *new_map_struct=move(map_struct,'E');
+
+    
+	print_map(new_map_struct);
+	
+	free((*new_map_struct).map_array);
+	free(new_map_struct);
+    
+    return EXIT_SUCCESS;
+}
+
+
+
+

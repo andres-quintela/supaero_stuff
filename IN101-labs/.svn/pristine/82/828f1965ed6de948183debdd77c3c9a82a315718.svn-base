@@ -1,0 +1,54 @@
+_GUI = $(if $(NOGUI),,-D GUI)
+CC = gcc
+CFLAGS = -g -std=c99 -Wall -I ./include $(_GUI)
+LDFLAGS = -lSDL
+
+
+.PHONY: clean doc add-files-svn
+
+%.o: ./src/%.c
+	$(CC) $(CFLAGS) -o ./obj/$@ -c $^
+
+check-syntax: gui.o
+
+test-loader: test-loader.o sokoban.o loader.o
+	$(CC) $(CFLAGS) -o ./app/$@ $(addprefix obj/,$^) $(LDFLAGS)
+
+test-move: test-move.o sokoban.o loader.o
+	$(CC) $(CFLAGS) -o ./app/$@ $(addprefix obj/,$^) $(LDFLAGS)
+
+test-replay: test-replay.o sokoban.o loader.o
+	$(CC) $(CFLAGS) -o ./app/$@ $(addprefix obj/,$^) $(LDFLAGS)
+
+replay: replay.o sokoban.o loader.o
+	$(CC) $(CFLAGS) -o ./app/$@ $(addprefix obj/,$^) $(LDFLAGS)
+
+
+play: play.o gui.o sokoban.o loader.o
+	$(CC) $(CFLAGS) -o ./app/$@ $(addprefix obj/,$^) $(LDFLAGS)
+
+compile-all: test-loader test-move test-replay replay play doc
+
+
+
+read-file: read-file.o
+	$(CC) $(CFLAGS) -o $@ $^
+
+write-fact: write-fact.o
+	$(CC) $(CFLAGS) -o $@ $^
+
+app-ex-loader: app-ex-loader.o
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+
+app-ex-gui: app-ex-gui.o gui.o
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+
+
+add-files-svn:
+	svn add --force src/*.c include/*.h data/*.txt --auto-props --parents --depth infinity -q
+
+doc:
+	doxygen conf/doxygen.conf
+
+clean:
+	- rm -r -f *.o *.csv ./app/* ./obj/*

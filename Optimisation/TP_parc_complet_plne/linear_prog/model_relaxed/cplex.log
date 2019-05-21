@@ -1,0 +1,62 @@
+
+Log started (V12.6.3.0) Thu Apr 11 09:07:34 2019
+
+
+Problem 'parc_complet.lp-pulp.lp' read.
+Read time = 0.06 sec. (4.60 ticks)
+New value for mixed integer optimality gap tolerance: 0.01
+New value for time limit in seconds: 300
+Parallel mode: deterministic, using up to 8 threads for concurrent optimization.
+Tried aggregator 1 time.
+LP Presolve eliminated 4095 rows and 38 columns.
+Aggregator did 3740 substitutions.
+Reduced LP has 44836 rows, 16574 columns, and 138395 nonzeros.
+Presolve time = 0.03 sec. (35.04 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =     -41276545.922795
+Perturbation started.
+Iteration:   303   Dual objective     =     -40493189.684963
+Iteration:  1086   Dual objective     =     -30415542.681443
+Iteration:  1733   Dual objective     =     -24151992.870878
+Iteration:  2189   Dual objective     =     -20993141.606204
+Iteration:  2773   Dual objective     =     -19877632.952013
+Iteration:  3304   Dual objective     =     -19832778.990642
+Iteration:  3867   Dual objective     =     -19805303.027169
+Iteration:  4364   Dual objective     =     -19778288.768338
+Iteration:  4678   Dual objective     =     -19729971.844838
+Iteration:  5149   Dual objective     =     -19691305.925330
+Iteration:  5554   Dual objective     =     -19660407.406364
+Iteration:  5972   Dual objective     =     -19591113.963311
+Iteration:  6340   Dual objective     =     -19543857.041193
+Iteration:  6765   Dual objective     =     -19464004.356007
+Iteration:  7155   Dual objective     =     -19451759.306161
+Iteration:  7475   Dual objective     =     -19441563.372318
+Iteration:  7831   Dual objective     =     -19409237.307860
+Iteration:  8177   Dual objective     =     -19380643.435594
+Iteration:  8515   Dual objective     =     -19357432.139379
+Iteration:  8838   Dual objective     =     -19328708.417223
+Iteration:  9218   Dual objective     =     -19317226.785777
+Iteration:  9610   Dual objective     =     -19311066.124656
+Iteration: 10057   Dual objective     =     -19295972.396807
+Iteration: 10493   Dual objective     =     -19280916.112513
+Iteration: 10855   Dual objective     =     -19274567.083481
+Iteration: 11241   Dual objective     =     -19270419.448562
+Iteration: 11609   Dual objective     =     -19263675.334727
+Iteration: 11990   Dual objective     =     -19259857.820486
+Iteration: 12301   Dual objective     =     -19257609.803005
+Iteration: 12670   Dual objective     =     -19256945.466548
+Removing perturbation.
+Iteration: 12715   Scaled dual infeas =             4.994881
+Iteration: 12725   Dual objective     =     -19265141.442844
+Reinitializing dual norms . . .
+
+Dual simplex solved model.
+
+
+Dual simplex - Optimal:  Objective = -1.9265137270e+07
+Solution time =    2.81 sec.  Iterations = 12737 (10)
+Deterministic time = 1381.71 ticks  (491.17 ticks/sec)
+
+
+Solution written to file 'parc_complet.lp-pulp.sol'.

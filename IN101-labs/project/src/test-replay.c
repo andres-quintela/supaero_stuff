@@ -1,0 +1,134 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <assert.h>
+
+
+#include "sokoban.h"
+#include "loader.h"
+
+
+int main(void) {
+
+
+/////////////////////////case 1///////////////////////////
+
+//define input and comparison file sizes
+	
+	char input_map[19];
+	
+	
+	FILE* in_map = NULL;
+	FILE* result_map = NULL;
+	
+	
+	char *outputs[5] = {"./data/soko_dumb_1.in","./data/soko_dumb_2.in","./data/soko_dumb_win.in","./data/soko_dumb_3.in","./data/soko_dumb_win.in"};
+	int plan_length[5] ={3,5,7,7,9};
+	char plan1[7]="SSSEENN";
+	char plan2[9]="ESEESSWNN";
+	
+	//open original map
+	
+	sprintf(input_map,"./data/soko_dumb.in");
+
+	
+	 //iterate over plans
+	for(int j=0; j<5; j++){
+		
+		in_map = fopen(input_map,"r");
+		game_map* map_struct = load(in_map);
+		game_map* newmap_struct;
+		
+		if (j<3){
+			newmap_struct=replay(map_struct,plan_length[j],plan1);
+			}
+		else {
+			newmap_struct=replay(map_struct,plan_length[j],plan2);
+			}
+		print_map(newmap_struct);
+		//open and print result file
+		result_map = fopen(outputs[j],"r");
+		game_map* resultmap_struct = load(result_map);
+		print_map(resultmap_struct);
+		 
+		 //comparing using assert function
+		   for (int w=0; w < (*newmap_struct).width; w++){
+			 for (int h=0; h < (*newmap_struct).height; h++){
+				 assert((*resultmap_struct).map_array[w + (*newmap_struct).width *h] == ((*newmap_struct).map_array)[w + (*newmap_struct).width*h]);
+				 
+			 }
+		 }
+		 
+		//freeing allocatd maps
+		free((*newmap_struct).map_array);
+		 free(newmap_struct);
+		
+		free((*resultmap_struct).map_array);
+		 free(resultmap_struct);
+		 
+	printf("plan %d worked fine \n",(j+1));
+	}
+	
+/////////////////////////case 2///////////////////////////
+
+//define input and comparison file sizes
+	printf("\n");
+	printf("Big plan case\n");
+	
+	FILE *plan_file=NULL;
+	
+	char *outputs_big[3] = {"./data/soko1_1.in","./data/soko1_2.in","./data/soko1_win.in"};
+	int plan_length_big[3] ={100,150,184};
+	
+	//get plan
+	
+	char plan[185];
+	plan_file=fopen("./data/soko1-plan.txt","r");
+	fgets(plan,185,plan_file);
+	fclose(plan_file);
+	
+	//open original map
+	
+	sprintf(input_map,"./data/soko1.in");
+
+	
+	 //iterate over plans
+	for(int j=0; j<3; j++){
+		
+		in_map = fopen(input_map,"r");
+		game_map* map_struct = load(in_map);
+		game_map* newmap_struct;
+		
+		newmap_struct=replay(map_struct,plan_length_big[j],plan);
+		
+		print_map(newmap_struct);
+		//open and print result file
+		result_map = fopen(outputs_big[j],"r");
+		game_map* resultmap_struct = load(result_map);
+		print_map(resultmap_struct);
+		 
+		 //comparing using assert function
+		   for (int w=0; w < (*newmap_struct).width; w++){
+			 for (int h=0; h < (*newmap_struct).height; h++){
+				 assert((*resultmap_struct).map_array[w + (*newmap_struct).width *h] == ((*newmap_struct).map_array)[w + (*newmap_struct).width*h]);
+				 
+			 }
+		 }
+		 	//freeing allocatd maps
+		free((*newmap_struct).map_array);
+		 free(newmap_struct);
+		
+		free((*resultmap_struct).map_array);
+		 free(resultmap_struct);
+		 
+		 
+	printf("plan %d worked fine \n",(j+1));
+	}
+	
+	
+		printf("ALL PLANS WORKED\n");
+
+	
+	
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,103 @@
+/**
+ * @file solver.h
+ *
+ * @brief Functions used in the solver
+ *
+ * @author Andrés Quintela
+ */
+
+#ifndef SOLVER_H
+#define SOLVER_H
+
+#include "sokoban.h"
+#include "queue_map.h"
+#include "linked_list_map.h"
+
+
+typedef struct stats stats;
+/**
+ *  @brief structure to store computing parameters
+ */
+struct stats {
+    /** the map has a solution or not*/
+    bool solution;
+    /** the plan length */
+    int length;
+    /** the plan */
+    char *plan;
+    /** computing time */
+    double time;
+};
+
+
+/**
+ * @brief explore the current map position in all possible directions
+ *
+ * @param *current_configuration pointer to current map
+ * 
+ * @param *explored_list pointer pointer to the list of explored maps
+ * 
+ * @param *search_queue pointer to the search queue
+ * 
+ * @return qcell_map  pointer to the winning map if won or to NULL if not
+ */
+qcell_map *create_children(qcell_map *current_configuration,linked_list_map *explored_list,queue *search_queue);
+
+
+/**
+ * @brief check if current map has been explored 
+ * 
+ * @param *explored_list pointer pointer to the list of explored maps
+ * 
+ * @param *map_struct pointer to the current map
+ * 
+ * @return true if yes
+ */
+bool is_map_explored(linked_list_map* explored_list, game_map *map_struct);
+
+/**
+ * @brief check if current map has been explored 
+ * 
+ * @param *explored_list pointer pointer to the list of explored maps
+ * 
+ * @param *map_struct pointer to the current map
+ * 
+ * @return true if yes
+ */
+bool is_winning_map(qcell_map *current_configuration);
+
+
+/**
+ * @brief obtain winning path
+ * 
+ * @param *current_configuration current map
+ * 
+ * @return tstring with plan
+ */
+char *obtain_path(qcell_map *current_configuration);
+
+
+/**
+ * @brief solve a sokoban game
+ * 
+ * @param map_struct initial map
+ * 
+ * @post solved map
+ */
+stats *solve(game_map *map_struct);
+
+/**
+ * @brief sprint stats
+ * 
+ * @param data structure containing the solving data
+ * 
+ * @post printed stats
+ */
+void print_stats(stats *data);
+
+
+
+
+
+
+#endif

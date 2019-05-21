@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "sokoban.h"
+#include "linked_list_map.h"
+#include "loader.h"
+#include "queue_map.h"
+#include "solver.h"
+
+
+int main(int argc, char *argv[]) {
+
+    // testing if a filename has been given
+    if (argc != 2) {
+        fprintf(stderr, "You must provide a file name!\n");
+        exit(EXIT_FAILURE);
+    }
+
+    // open file. The filename is the first argument on the command
+    // line, hence stored in argv[1]
+    FILE *p_file = NULL;
+
+    p_file = fopen(argv[1], "r");
+
+    if (p_file == NULL) {
+        fprintf(stderr, "Cannot read file %s!\n", argv[1]);
+        exit(EXIT_FAILURE);
+    }
+    
+    //call load function and get map structure
+    game_map *map_struct=load(p_file);
+    
+	
+	/** intialize queues and lists
+	 **/
+	queue *search_queue=qnil();
+ 
+	queue *dequeue_queue=qnil();
+	
+	linked_list_map* explored_list= nil();
+ 
+
+	 /**create initial configuration**/
+	
+	qcell_map *first_configuration=malloc(sizeof(qcell_map));
+	
+	(*first_configuration).map_struct=map_struct;
+	(*first_configuration).next=NULL;
+	(*first_configuration).mother=NULL;
+	(*first_configuration).action='\0';
+	(*first_configuration).depth=0;
+	
+	//enqueue first configuration
+	enqueue(search_queue,first_configuration);
+	
+	bool win = false;
+
+	
+	int counter =0;
+	while (win == false){
+		
+		counter++;
+		printf("Iteration number %d\n",counter);
+				
+		//obtain current configuration from search queue
+		qcell_map *current_configuration =dequeue(search_queue);
+		
+		
+		//add current configuration to dequeued queue
+		enqueue(dequeue_queue,current_configuration);
+
+
+		//check if map is winning map
+		win = is_winning_map(current_configuration);
+		if (win == true){
+			
+			printf("we have found the winning map\n");
+			print_map((*current_configuration).map_struct);
+			
+			
+			}
+		
+		//add explored map to list
+		cons(explored_list,(*current_configuration).map_struct);
+
+		
+		//explore children
+		create_children(current_configuration,explored_list,search_queue);
+		}
+				
+return 0;
+}

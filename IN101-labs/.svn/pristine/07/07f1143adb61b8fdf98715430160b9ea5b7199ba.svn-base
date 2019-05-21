@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "sokoban.c"
+
+int main(int argc, char *argv[]) {
+
+    // testing if a filename has been given
+    if (argc != 2) {
+        fprintf(stderr, "You must provide a file name!\n");
+        exit(EXIT_FAILURE);
+    }
+
+    // open file. The filename is the first argument on the command
+    // line, hence stored in argv[1]
+    FILE *p_file = NULL;
+
+    p_file = fopen(argv[1], "r");
+
+    if (p_file == NULL) {
+        fprintf(stderr, "Cannot read file %s!\n", argv[1]);
+        exit(EXIT_FAILURE);
+    }
+    
+    //call load function and get map structure
+    game_map *map_struct=load(p_file);
+    
+    int exit = 0;
+    char movement;
+    
+    
+    
+    while (exit==0){
+		print_map(map_struct);
+		
+			switch (getchar()) {
+			case EOF:
+			movement='!';
+			
+			case 'z':
+				getchar();
+				movement=NORTH;
+				break;
+			case 's':
+				getchar();
+				movement=SOUTH;
+				break;
+			case 'd':
+				getchar();
+				movement=EAST;
+				break;
+			case 'q':
+				getchar();
+				movement=WEST;
+				break;
+			case 'e':
+				exit=1;
+				break;
+				;
+			}
+			
+		game_map *map_struct1=move(map_struct,movement);
+		map_struct=map_struct1;
+				
+		
+	}
+		return 0;
+		} 

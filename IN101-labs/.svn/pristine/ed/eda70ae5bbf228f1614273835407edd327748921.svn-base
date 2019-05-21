@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct cell_int  cell_int;
+typedef TYPE_TO_BE_DEFINED linked_list_int;
+
+struct cell_int {
+    TO_BE_DEFINED
+};
+
+// utilitary functions goes here
+
+// functions from the signature
+TYPE_TO_BE_DEFINED nil(ARGS_TO_BE_DEFINED) {
+
+}
+
+TYPE_TO_BE_DEFINED cons(ARGS_TO_BE_DEFINED) {
+
+}
+
+TYPE_TO_BE_DEFINED size(ARGS_TO_BE_DEFINED) {
+
+}
+
+TYPE_TO_BE_DEFINED is_empty(ARGS_TO_BE_DEFINED) {
+
+}
+
+TYPE_TO_BE_DEFINED get_element(ARGS_TO_BE_DEFINED) {
+
+}
+
+TYPE_TO_BE_DEFINED insert_element(ARGS_TO_BE_DEFINED) {
+
+}
+
+TYPE_TO_BE_DEFINED remove_element(ARGS_TO_BE_DEFINED) {
+
+}
+
+TYPE_TO_BE_DEFINED deallocate_list(ARGS_TO_BE_DEFINED) {
+
+}
+
+TYPE_TO_BE_DEFINED print_list(ARGS_TO_BE_DEFINED) {
+
+}
+
+// the program
+int main(void) {
+
+    return 0;
+}

@@ -1,0 +1,54 @@
+\hypertarget{structvertex}{\section{vertex Struct Reference}
+\label{structvertex}\index{vertex@{vertex}}
+}
+
+
+The structure representing the vertices of the graph.  
+
+
+
+
+{\ttfamily \#include $<$graph\-\_\-char.\-h$>$}
+
+
+
+Collaboration diagram for vertex\-:
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{structvertex_a892669c60521d3e785b24f88d03f6537}{id}
+\item 
+\hyperlink{structedge}{edge} $\ast$ \hyperlink{structvertex_a3f94c351e442c70f9b503ac380ad460a}{adjacency\-\_\-array} \mbox{[}\hyperlink{graph__char_8h_aee9979a47e386d3392d637d35c896114}{M\-A\-X\-\_\-\-N\-E\-I\-G\-H\-B\-O\-R\-S\-\_\-\-N\-B}\mbox{]}
+\item 
+int \hyperlink{structvertex_abe014b5e3b93b82ba585a6578a3b9ed3}{adjacency\-\_\-size}
+\item 
+int \hyperlink{structvertex_a60dab6ff86564acea3c8282a1488a4ef}{distance}
+\item 
+\hyperlink{structvertex}{vertex} $\ast$ \hyperlink{structvertex_a505c7e912c4778ec948558d78cfdda6a}{p\-\_\-pred}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The structure representing the vertices of the graph. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structvertex_a3f94c351e442c70f9b503ac380ad460a}{\index{vertex@{vertex}!adjacency\-\_\-array@{adjacency\-\_\-array}}
+\index{adjacency\-\_\-array@{adjacency\-\_\-array}!vertex@{vertex}}
+\subsubsection[{adjacency\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf edge}$\ast$ vertex\-::adjacency\-\_\-array\mbox{[}{\bf M\-A\-X\-\_\-\-N\-E\-I\-G\-H\-B\-O\-R\-S\-\_\-\-N\-B}\mbox{]}}}\label{structvertex_a3f94c351e442c70f9b503ac380ad460a}
+An array containing pointers to edges representing the adjacency list of the vertex. \hypertarget{structvertex_abe014b5e3b93b82ba585a6578a3b9ed3}{\index{vertex@{vertex}!adjacency\-\_\-size@{adjacency\-\_\-size}}
+\index{adjacency\-\_\-size@{adjacency\-\_\-size}!vertex@{vertex}}
+\subsubsection[{adjacency\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int vertex\-::adjacency\-\_\-size}}\label{structvertex_abe014b5e3b93b82ba585a6578a3b9ed3}
+The size of the list, i.\-e. the index from which the vertices in the array are not necessary neighbors of the vertex. \hypertarget{structvertex_a60dab6ff86564acea3c8282a1488a4ef}{\index{vertex@{vertex}!distance@{distance}}
+\index{distance@{distance}!vertex@{vertex}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}int vertex\-::distance}}\label{structvertex_a60dab6ff86564acea3c8282a1488a4ef}
+The minimum distance from the source vertex. May change when Disjkstra's algorithm is called. \hypertarget{structvertex_a892669c60521d3e785b24f88d03f6537}{\index{vertex@{vertex}!id@{id}}
+\index{id@{id}!vertex@{vertex}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}char vertex\-::id}}\label{structvertex_a892669c60521d3e785b24f88d03f6537}
+An {\ttfamily char} value representing the id of the vertex \hypertarget{structvertex_a505c7e912c4778ec948558d78cfdda6a}{\index{vertex@{vertex}!p\-\_\-pred@{p\-\_\-pred}}
+\index{p\-\_\-pred@{p\-\_\-pred}!vertex@{vertex}}
+\subsubsection[{p\-\_\-pred}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vertex}$\ast$ vertex\-::p\-\_\-pred}}\label{structvertex_a505c7e912c4778ec948558d78cfdda6a}
+The predecessor in the shortest path from the source vertex. May change when Disjkstra's algorithm is called. 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{graph__char_8h}{graph\-\_\-char.\-h}\end{DoxyCompactItemize}

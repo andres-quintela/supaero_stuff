@@ -1,0 +1,47 @@
+
+Log started (V12.6.3.0) Wed Apr 10 15:22:15 2019
+
+
+Problem 'parc_complet.lp-pulp.lp' read.
+Read time = 0.05 sec. (4.33 ticks)
+New value for mixed integer optimality gap tolerance: 0.01
+New value for time limit in seconds: 300
+Bound infeasibility column 'prod_9_thf11'.
+Presolve time = 0.13 sec. (119.37 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.13 sec. (126.05 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.13 sec. (126.05 ticks)
+
+
+MIP - Integer infeasible.
+Current MIP best bound is infinite.
+Solution time =    0.13 sec.  Iterations = 0  Nodes = 0
+Deterministic time = 126.11 ticks  (936.45 ticks/sec)
+
+CPLEX Error  1217: No solution exists.
+No changes made.
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.00 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.00 ticks)
+
+
+MIP - Integer infeasible.
+Current MIP best bound is infinite.
+Solution time =    0.00 sec.  Iterations = 0  Nodes = 0
+Deterministic time = 0.00 ticks  (0.96 ticks/sec)
+
+
+CPLEX Error  1217: No solution exists.
+No file written.

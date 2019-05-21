@@ -1,0 +1,77 @@
+#include "sokoban.h"
+#include "loader.c"
+
+
+
+void print_map(game_map *map_struct){
+	
+	
+	int width=(*map_struct).width;
+    int height=(*map_struct).height;
+    char *map_array=(*map_struct).map_array;
+    
+    
+    printf("map dimensions: %d x %d\n", width, height);
+
+    printf("Map array:\n");	
+    
+    int counter=(width-1);
+    for (int i = 0; i <= width*height; i++){
+	printf("%c",map_array[i]);
+		if (i==counter){
+		printf("\n");
+		counter+=width;
+		}
+	}
+	printf("Player position in the map array %d \n",(*map_struct).position);
+}
+
+
+game_map *move_N(game_map map_struct){
+	
+	
+	int width=(*map_struct).width;
+    int height=(*map_struct).height;
+    char *map_array=(*map_struct).map_array;
+	int position=(*map_struct).position
+	
+	
+	//CONDITIONS//
+	
+	//1- CASES IN WHICH PLAYER CANT MOVE UPWARDS
+	
+	//if player is in top row
+	if (position < (width*2)){
+		
+		return map_struct;
+		}  
+		
+	//if has a wall on top
+	if ((position-width)== WALL){
+		
+		return map_struct;
+		}  
+	
+	//if player is has a box on top which has BOX or WALL on top
+	
+	if ((((position-(width*2))==WALL)||((position-(width*2))==BOX)||(position-(width*2))==BOX_ON)) && (((position-width)==BOX)||((position-width)==BOX_ON))){
+		
+		return map_struct;
+		}  
+
+	//2- CASES IN WHICH PLAYER CAN MOVE
+	
+	//if space above is a free or destination cell
+	if ((position-width)== CELL){
+		
+		new_position=(position-width);
+		new_map_array=map_array;
+		new_map_array[position]=CELL;
+		new_map_array[new_position]
+		
+		return map_struct;
+		}  
+	
+	
+	
+	}

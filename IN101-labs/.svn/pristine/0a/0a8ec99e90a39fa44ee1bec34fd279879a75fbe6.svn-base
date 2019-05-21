@@ -1,0 +1,31 @@
+#include "linked_list_map.h"
+#include <stdio.h>
+#include "loader.h"
+
+
+int main(void){
+	
+	
+	FILE *p_file = NULL;
+	p_file = fopen("./data/soko1.in","r");
+	game_map *map_struct=load(p_file);
+
+
+
+	linked_list_map *map_list = nil();
+	cons(map_list, map_struct);
+	printf("data\n");
+
+	if (is_empty(map_list)){
+		
+		printf("list empty");
+		}
+	
+	print_list(map_list);
+	
+	printf("data\n");
+	
+	
+	
+	return 0;
+	} 

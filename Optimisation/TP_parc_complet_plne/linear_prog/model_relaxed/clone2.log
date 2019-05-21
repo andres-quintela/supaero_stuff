@@ -1,0 +1,817 @@
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 15:37:59 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 15:38:08 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 15:40:41 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         90516.481398
+Iteration:   174    Infeasibility =          4090.848014
+Iteration:   188    Objective     =     -17244682.020825
+
+Dual simplex solved model.
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 15:41:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =    8438635668.624068
+Iteration:   356    Scaled infeas =         98660.424700
+Iteration:   529    Scaled infeas =         95050.314575
+Iteration:  1536    Scaled infeas =         90943.403441
+Iteration:  2357    Scaled infeas =         90486.633125
+Iteration:  3127    Scaled infeas =         90158.493711
+Iteration:  3872    Scaled infeas =         90006.585691
+Iteration:  4577    Scaled infeas =         89980.871119
+Iteration:  5252    Scaled infeas =         89893.182481
+Iteration:  5969    Scaled infeas =         89844.906545
+Iteration:  6591    Scaled infeas =         89828.185698
+Iteration:  7209    Scaled infeas =         89822.126192
+Iteration:  7906    Scaled infeas =         89819.366576
+Iteration:  8553    Scaled infeas =         89817.982338
+Iteration:  9162    Scaled infeas =         89817.456170
+Iteration: 10002    Scaled infeas =         89810.030630
+Iteration: 10478    Scaled infeas =         89721.816058
+Iteration: 10997    Scaled infeas =         89693.459479
+Iteration: 11566    Scaled infeas =         89618.452489
+Iteration: 12143    Scaled infeas =         89557.785414
+Iteration: 12725    Scaled infeas =         89519.918515
+Iteration: 13286    Scaled infeas =         89511.225484
+Iteration: 13860    Scaled infeas =         89483.040955
+Iteration: 14391    Scaled infeas =         89455.595378
+Iteration: 14877    Scaled infeas =         89405.227509
+Iteration: 15377    Scaled infeas =         89323.158091
+Iteration: 15855    Scaled infeas =         89273.274984
+Iteration: 16370    Scaled infeas =         89253.967368
+Iteration: 16901    Scaled infeas =         89214.922177
+Iteration: 17333    Scaled infeas =         89137.039841
+Iteration: 17758    Scaled infeas =         89097.989701
+Iteration: 18221    Scaled infeas =         89050.927618
+Iteration: 18643    Scaled infeas =         89010.110222
+Iteration: 19021    Scaled infeas =         88980.090948
+Switched to devex.
+Iteration: 19516    Scaled infeas =         88964.257650
+Iteration: 20130    Scaled infeas =         88727.373405
+Iteration: 20746    Scaled infeas =         88562.228873
+Iteration: 21376    Scaled infeas =         88400.248912
+Iteration: 21927    Scaled infeas =         88176.730158
+Iteration: 22486    Scaled infeas =         88078.400692
+Iteration: 23124    Scaled infeas =         87807.647816
+Iteration: 23732    Scaled infeas =         87637.661384
+Iteration: 24388    Scaled infeas =         87344.270688
+Iteration: 25037    Scaled infeas =         87209.436444
+Iteration: 25698    Scaled infeas =         86980.585196
+Iteration: 26329    Scaled infeas =         86875.053314
+Iteration: 26964    Scaled infeas =         86688.631685
+Removing shift (13).
+
+Dual simplex solved model.
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 15:43:23 2019
+
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =    8438635668.624068
+Iteration:   356    Scaled infeas =         98660.424700
+Iteration:   529    Scaled infeas =         95050.314575
+Iteration:  1536    Scaled infeas =         90943.403441
+Iteration:  2357    Scaled infeas =         90486.633125
+Iteration:  3127    Scaled infeas =         90158.493711
+Iteration:  3872    Scaled infeas =         90006.585691
+Iteration:  4577    Scaled infeas =         89980.871119
+Iteration:  5252    Scaled infeas =         89893.182481
+Iteration:  5969    Scaled infeas =         89844.906545
+Iteration:  6591    Scaled infeas =         89828.185698
+Iteration:  7209    Scaled infeas =         89822.126192
+Iteration:  7906    Scaled infeas =         89819.366576
+Iteration:  8553    Scaled infeas =         89817.982338
+Iteration:  9162    Scaled infeas =         89817.456170
+Iteration: 10002    Scaled infeas =         89810.030630
+Iteration: 10478    Scaled infeas =         89721.816058
+Iteration: 10997    Scaled infeas =         89693.459479
+Iteration: 11566    Scaled infeas =         89618.452489
+Iteration: 12143    Scaled infeas =         89557.785414
+Iteration: 12725    Scaled infeas =         89519.918515
+Iteration: 13286    Scaled infeas =         89511.225484
+Iteration: 13860    Scaled infeas =         89483.040955
+Iteration: 14391    Scaled infeas =         89455.595378
+Iteration: 14877    Scaled infeas =         89405.227509
+Iteration: 15377    Scaled infeas =         89323.158091
+Iteration: 15855    Scaled infeas =         89273.274984
+Iteration: 16370    Scaled infeas =         89253.967368
+Iteration: 16901    Scaled infeas =         89214.922177
+Iteration: 17333    Scaled infeas =         89137.039841
+Iteration: 17758    Scaled infeas =         89097.989701
+Iteration: 18221    Scaled infeas =         89050.927618
+Iteration: 18643    Scaled infeas =         89010.110222
+Iteration: 19021    Scaled infeas =         88980.090948
+Switched to devex.
+Iteration: 19516    Scaled infeas =         88964.257650
+Iteration: 20130    Scaled infeas =         88727.373405
+Iteration: 20746    Scaled infeas =         88562.228873
+Iteration: 21376    Scaled infeas =         88400.248912
+Iteration: 21927    Scaled infeas =         88176.730158
+Iteration: 22486    Scaled infeas =         88078.400692
+Iteration: 23124    Scaled infeas =         87807.647816
+Iteration: 23732    Scaled infeas =         87637.661384
+Iteration: 24388    Scaled infeas =         87344.270688
+Iteration: 25037    Scaled infeas =         87209.436444
+Iteration: 25698    Scaled infeas =         86980.585196
+Iteration: 26329    Scaled infeas =         86875.053314
+Iteration: 26964    Scaled infeas =         86688.631685
+Iteration: 27507    Scaled infeas =         86584.366292
+Removing shift (13).
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 15:50:23 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 15:50:33 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 15:50:41 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         38432.701028
+Iteration:    32    Objective     =      -8753296.288379
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 15:50:59 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 15:51:08 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         34898.506001
+Iteration:    32    Objective     =      -9946807.293190
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 15:51:40 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 15:51:49 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         38432.701028
+Iteration:    32    Objective     =      -8753296.288379
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 15:55:03 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 15:55:12 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         38432.701028
+Iteration:    32    Objective     =      -8753296.288379
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 15:55:44 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 15:55:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         34871.829164
+Iteration:    32    Objective     =      -9941024.559478
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 15:57:45 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 15:57:54 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         38432.701028
+Iteration:    32    Objective     =      -8753296.288379
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 15:58:53 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 15:59:03 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         34871.829164
+Iteration:    32    Objective     =      -9941024.559478
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:00:34 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:00:43 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         34871.829164
+Iteration:    32    Objective     =      -9941024.559478
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:01:19 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:01:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         38432.701028
+Iteration:    32    Objective     =      -8753296.288379
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:02:10 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:02:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         34898.506001
+Iteration:    32    Objective     =      -9946807.293190
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:03:39 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:03:48 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         38432.701028
+Iteration:    32    Objective     =      -8753296.288379
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:04:48 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:04:57 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         28740.105090
+Iteration:    35    Objective     =      -9816322.307229
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:06:19 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:06:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         38432.701028
+Iteration:    32    Objective     =      -8753296.288379
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:07:26 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:07:36 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         28740.105090
+Iteration:    35    Objective     =      -9816322.307229
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:08:09 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:08:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         28740.105090
+Iteration:    35    Objective     =      -9816322.307229
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:11:18 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:11:27 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         38432.701028
+Iteration:    32    Objective     =      -8753296.288379
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:12:28 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:12:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         38432.701028
+Iteration:    32    Objective     =      -8753296.288379
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:16:19 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:16:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         34871.829164
+Iteration:    32    Objective     =      -9941024.559478
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:18:08 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:18:17 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         30916.258321
+Iteration:    20    Objective     =     -10569970.443159
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:19:33 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:19:41 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:21:24 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         76748.358912
+Iteration:   172    Infeasibility =          1145.916049
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:24:59 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:25:08 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:27:56 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         90516.481398
+Iteration:   174    Infeasibility =          4090.848014
+Iteration:   188    Objective     =     -17244682.020825
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:33:12 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:33:16 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         17339.013015
+Iteration:    20    Objective     =      -6510118.672434
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:33:57 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:34:01 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         17339.013015
+Iteration:    20    Objective     =      -6510118.672434
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:34:42 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:34:51 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:37:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         90516.481398
+Iteration:   174    Infeasibility =          4090.848014
+Iteration:   188    Objective     =     -17244682.020825
+Switched to devex.
+Iteration:   255    Objective     =     -19003343.127978
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:45:04 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:45:08 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         17339.013015
+Iteration:    20    Objective     =      -6510118.672434
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:46:13 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:46:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         17339.013015
+Iteration:    20    Objective     =      -6510118.672434
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:48:06 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:48:11 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         17339.013015
+Iteration:    20    Objective     =      -6510118.672434
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:48:40 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:48:49 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:51:24 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         90516.481398
+Iteration:   174    Infeasibility =          4090.848014
+Iteration:   188    Objective     =     -17244682.020825
+Switched to devex.
+Iteration:   255    Objective     =     -19003343.127978
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 16:53:13 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:53:22 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 16:55:05 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         76748.358912
+Iteration:   172    Infeasibility =          1145.916049
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 17:00:03 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 17:00:07 2019
+
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 17:00:43 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 17:00:52 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 17:02:35 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         76748.358912
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Wed Apr 10 17:03:32 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 17:03:41 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Wed Apr 10 17:06:16 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         90516.481398
+Iteration:   174    Infeasibility =          4090.848014
+Iteration:   188    Objective     =     -17244682.020825
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Thu Apr 11 08:11:42 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:11:52 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:14:20 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         91262.081392
+Iteration:   182    Infeasibility =          2070.353569
+Iteration:   193    Objective     =     -18011221.202239
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Thu Apr 11 08:15:29 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:15:41 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:16:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         90745.081393
+Iteration:   173    Infeasibility =          3201.178329
+Iteration:   185    Objective     =      -9245419.166266
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Thu Apr 11 08:17:37 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:17:45 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:18:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         74070.272897
+Iteration:   166    Infeasibility =          1219.961560
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Thu Apr 11 08:20:57 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:21:07 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:23:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         90516.481398
+Iteration:   174    Infeasibility =          4090.848014
+Iteration:   188    Objective     =     -17244682.020825
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Thu Apr 11 08:25:53 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:26:02 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:27:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         76748.358912
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Thu Apr 11 08:29:48 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:29:55 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:33:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         91364.881381
+Iteration:   179    Infeasibility =          3704.766818
+Iteration:   192    Objective     =     -16605784.814220
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Thu Apr 11 08:53:05 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:53:09 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =           915.078951
+Switched to devex.
+Iteration:     7    Objective     =      -7549335.062457
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Thu Apr 11 08:54:37 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:54:41 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =           915.078951
+Switched to devex.
+Iteration:     7    Objective     =      -7549335.062457
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Thu Apr 11 08:55:33 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 08:55:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =           915.078951
+Switched to devex.
+Iteration:     7    Objective     =      -7549335.062457
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Thu Apr 11 09:00:36 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 09:00:40 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =           915.078951
+Switched to devex.
+Iteration:     7    Objective     =      -7549335.062457
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Thu Apr 11 09:01:06 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 09:01:11 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =           915.078951
+Switched to devex.
+Iteration:     7    Objective     =      -7549335.062457
+
+Dual simplex solved model.
+
+
+Log for '' Clone_2 (V12.6.3.0) Thu Apr 11 09:03:34 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 09:03:43 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 09:05:27 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         76748.358912
+Iteration:   172    Infeasibility =          1145.916049
+
+Dual simplex solved model.
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_2 (V12.6.3.0) Thu Apr 11 09:07:35 2019
+
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =    8438635668.624068
+Iteration:   356    Scaled infeas =         98660.424700
+Iteration:   529    Scaled infeas =         95050.314575
+Iteration:  1536    Scaled infeas =         90943.403441
+Iteration:  2357    Scaled infeas =         90486.633125
+Iteration:  3127    Scaled infeas =         90158.493711
+Iteration:  3872    Scaled infeas =         90006.585691
+Iteration:  4577    Scaled infeas =         89980.871119
+Iteration:  5252    Scaled infeas =         89893.182481
+Iteration:  5969    Scaled infeas =         89844.906545
+Iteration:  6591    Scaled infeas =         89828.185698
+Iteration:  7209    Scaled infeas =         89822.126192
+Iteration:  7906    Scaled infeas =         89819.366576
+Iteration:  8553    Scaled infeas =         89817.982338
+Iteration:  9162    Scaled infeas =         89817.456170
+Iteration: 10002    Scaled infeas =         89810.030630
+Iteration: 10478    Scaled infeas =         89721.816058
+Iteration: 10997    Scaled infeas =         89693.459479
+Iteration: 11566    Scaled infeas =         89618.452489
+Iteration: 12143    Scaled infeas =         89557.785414
+Iteration: 12725    Scaled infeas =         89519.918515
+Iteration: 13286    Scaled infeas =         89511.225484
+Iteration: 13860    Scaled infeas =         89483.040955
+Iteration: 14391    Scaled infeas =         89455.595378
+Iteration: 14877    Scaled infeas =         89405.227509
+Iteration: 15377    Scaled infeas =         89323.158091
+Iteration: 15855    Scaled infeas =         89273.274984
+Iteration: 16370    Scaled infeas =         89253.967368
+Iteration: 16901    Scaled infeas =         89214.922177
+Iteration: 17333    Scaled infeas =         89137.039841
+Iteration: 17758    Scaled infeas =         89097.989701
+Iteration: 18221    Scaled infeas =         89050.927618
+Iteration: 18643    Scaled infeas =         89010.110222
+Iteration: 19021    Scaled infeas =         88980.090948
+Switched to devex.
+Iteration: 19516    Scaled infeas =         88964.257650
+Iteration: 20130    Scaled infeas =         88727.373405
+Iteration: 20746    Scaled infeas =         88562.228873
+Iteration: 21376    Scaled infeas =         88400.248912
+Iteration: 21927    Scaled infeas =         88176.730158
+Iteration: 22486    Scaled infeas =         88078.400692
+Iteration: 23124    Scaled infeas =         87807.647816
+Iteration: 23732    Scaled infeas =         87637.661384
+Iteration: 24388    Scaled infeas =         87344.270688
+Iteration: 25037    Scaled infeas =         87209.436444
+Iteration: 25698    Scaled infeas =         86980.585196
+Iteration: 26329    Scaled infeas =         86875.053314
+Iteration: 26964    Scaled infeas =         86688.631685
+Removing shift (13).
+
+Dual simplex solved model.
+

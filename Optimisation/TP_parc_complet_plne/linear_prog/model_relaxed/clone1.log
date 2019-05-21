@@ -1,0 +1,1115 @@
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:37:59 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:38:01 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 15:38:08 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 15:40:41 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.12 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 4560
+Total time for automatic ordering = 0.00 sec. (0.09 ticks)
+Barrier time = 0.00 sec. (0.18 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 15:41:15 2019
+
+Tried aggregator 0 times.
+Reduced presolve eliminated 142 rows and 142 columns.
+Reduced LP has 44694 rows, 16432 columns, and 137903 nonzeros.
+Presolve time = 0.02 sec. (17.06 ticks)
+Parallel mode: using up to 6 threads for barrier.
+
+***NOTE: Found 7 dense columns.
+
+Number of nonzeros in lower triangle of A*A' = 497357
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.04 sec. (32.05 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 6
+  Rows in Factor            = 44701
+  Integer space required    = 293820
+  Total non-zeros in factor = 2768777
+  Total FP ops to factor    = 334663607
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   3.8531888e+16  -1.1385492e+17  7.16e+12  4.41e+12  5.67e+10  1.00e+00
+   1   9.2970714e+15  -6.7925721e+16  2.11e+12  1.30e+12  3.32e+10  1.95e-13
+   2   3.6824286e+15  -1.3431604e+16  8.99e+11  5.54e+11  6.38e+09  1.02e-13
+   3   1.5149964e+14  -2.3408744e+15  9.90e+10  6.10e+10  9.97e+08  1.10e-12
+   4   5.9850053e+12  -3.0354892e+14  4.87e+09  3.00e+09  1.29e+08  9.71e-12
+   5   6.3524849e+11  -2.1844167e+13  5.45e+08  3.36e+08  9.25e+06  1.59e-10
+   6   1.7213188e+11  -2.8716733e+12  1.22e+08  7.50e+07  1.23e+06  1.27e-09
+   7   5.0629237e+10  -7.7097330e+11  2.05e+07  1.26e+07  3.38e+05  4.98e-09
+   8   1.9079968e+10  -1.4822309e+11  2.85e+06  1.75e+06  6.99e+04  2.82e-08
+   9   7.0884796e+09  -3.1197017e+10  8.07e+05  4.97e+05  1.56e+04  1.49e-07
+  10   1.9413641e+09  -1.4251727e+10  2.57e+05  1.58e+05  6.99e+03  3.97e-07
+  11   4.8278009e+08  -4.8999932e+09  6.84e+04  4.22e+04  2.39e+03  1.69e-06
+  12   2.1112388e+08  -2.1533739e+09  3.32e+04  2.04e+04  1.04e+03  4.32e-06
+  13   1.0308885e+08  -1.0224399e+09  1.77e+04  1.09e+04  4.87e+02  9.65e-06
+  14   4.3622582e+07  -3.7386570e+08  9.20e+03  5.66e+03  1.72e+02  3.05e-05
+  15   1.7380843e+07  -1.3763868e+08  5.35e+03  3.30e+03  5.74e+01  9.73e-05
+  16   4.3302448e+06  -7.8439105e+07  3.42e+03  2.11e+03  2.88e+01  2.05e-04
+  17  -7.5450608e+06  -4.9369042e+07  1.66e+03  1.02e+03  1.48e+01  4.49e-04
+  18  -1.3004619e+07  -3.1286284e+07  7.88e+02  4.86e+02  6.27e+00  1.21e-03
+  19  -1.4705319e+07  -2.5481285e+07  5.71e+02  3.52e+02  3.26e+00  2.72e-03
+  20  -1.6373868e+07  -2.4504088e+07  3.76e+02  2.31e+02  2.72e+00  3.37e-03
+  21  -1.7031511e+07  -2.2376104e+07  2.91e+02  1.79e+02  1.62e+00  6.30e-03
+  22  -1.7486957e+07  -2.2169714e+07  2.34e+02  1.44e+02  1.51e+00  6.83e-03
+  23  -1.7976976e+07  -2.0561741e+07  1.69e+02  1.04e+02  6.72e-01  1.64e-02
+  24  -1.8330876e+07  -2.0342766e+07  1.23e+02  7.59e+01  5.57e-01  2.01e-02
+  25  -1.8722853e+07  -1.9969242e+07  7.08e+01  4.36e+01  3.66e-01  3.21e-02
+  26  -1.8895176e+07  -1.9674743e+07  4.51e+01  2.78e+01  2.26e-01  5.49e-02
+  27  -1.8985701e+07  -1.9472258e+07  3.23e+01  1.99e+01  1.27e-01  1.04e-01
+  28  -1.9085811e+07  -1.9409359e+07  1.95e+01  1.20e+01  9.28e-02  1.44e-01
+  29  -1.9127819e+07  -1.9364532e+07  1.37e+01  8.42e+00  7.00e-02  1.94e-01
+  30  -1.9164376e+07  -1.9302595e+07  8.66e+00  5.33e+00  3.84e-02  3.71e-01
+  31  -1.9187091e+07  -1.9275751e+07  5.81e+00  3.57e+00  2.36e-02  6.15e-01
+  32  -1.9202423e+07  -1.9263101e+07  3.96e+00  2.42e+00  1.63e-02  8.96e-01
+  33  -1.9206505e+07  -1.9251706e+07  3.48e+00  2.13e+00  9.55e-03  1.54e+00
+  34  -1.9210885e+07  -1.9245516e+07  2.99e+00  1.83e+00  5.22e-03  2.69e+00
+  35  -1.9215680e+07  -1.9243424e+07  2.49e+00  1.52e+00  3.57e-03  3.66e+00
+  36  -1.9220052e+07  -1.9241945e+07  2.01e+00  1.23e+00  2.52e-03  4.80e+00
+  37  -1.9222573e+07  -1.9239867e+07  1.73e+00  1.05e+00  1.23e-03  8.10e+00
+  38  -1.9226829e+07  -1.9239019e+07  1.25e+00  7.42e-01  8.63e-04  1.08e+01
+  39  -1.9231387e+07  -1.9237886e+07  7.17e-01  4.21e-01  2.74e-04  2.05e+01
+  40  -1.9233144e+07  -1.9237603e+07  5.09e-01  2.84e-01  2.03e-04  2.51e+01
+  41  -1.9234372e+07  -1.9236583e+07  3.26e-01  1.77e-01  3.21e-05  1.07e+02
+  42  -1.9235800e+07  -1.9236480e+07  5.22e-01  5.44e-02  9.87e-06  1.62e+02
+ Barrier aborted.
+Barrier time = 2.38 sec. (1610.54 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 15:43:23 2019
+
+Tried aggregator 0 times.
+Reduced presolve eliminated 142 rows and 142 columns.
+Reduced LP has 44694 rows, 16432 columns, and 137903 nonzeros.
+Presolve time = 0.03 sec. (17.06 ticks)
+Parallel mode: using up to 6 threads for barrier.
+
+***NOTE: Found 7 dense columns.
+
+Number of nonzeros in lower triangle of A*A' = 497357
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.06 sec. (32.05 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 6
+  Rows in Factor            = 44701
+  Integer space required    = 293820
+  Total non-zeros in factor = 2768777
+  Total FP ops to factor    = 334663607
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   3.8531888e+16  -1.1385492e+17  7.16e+12  4.41e+12  5.67e+10  1.00e+00
+   1   9.2970714e+15  -6.7925721e+16  2.11e+12  1.30e+12  3.32e+10  1.95e-13
+   2   3.6824286e+15  -1.3431604e+16  8.99e+11  5.54e+11  6.38e+09  1.02e-13
+   3   1.5149964e+14  -2.3408744e+15  9.90e+10  6.10e+10  9.97e+08  1.10e-12
+   4   5.9850053e+12  -3.0354892e+14  4.87e+09  3.00e+09  1.29e+08  9.71e-12
+   5   6.3524849e+11  -2.1844167e+13  5.45e+08  3.36e+08  9.25e+06  1.59e-10
+   6   1.7213188e+11  -2.8716733e+12  1.22e+08  7.50e+07  1.23e+06  1.27e-09
+   7   5.0629237e+10  -7.7097330e+11  2.05e+07  1.26e+07  3.38e+05  4.98e-09
+   8   1.9079968e+10  -1.4822309e+11  2.85e+06  1.75e+06  6.99e+04  2.82e-08
+   9   7.0884796e+09  -3.1197017e+10  8.07e+05  4.97e+05  1.56e+04  1.49e-07
+  10   1.9413641e+09  -1.4251727e+10  2.57e+05  1.58e+05  6.99e+03  3.97e-07
+  11   4.8278009e+08  -4.8999932e+09  6.84e+04  4.22e+04  2.39e+03  1.69e-06
+  12   2.1112388e+08  -2.1533739e+09  3.32e+04  2.04e+04  1.04e+03  4.32e-06
+  13   1.0308885e+08  -1.0224399e+09  1.77e+04  1.09e+04  4.87e+02  9.65e-06
+  14   4.3622582e+07  -3.7386570e+08  9.20e+03  5.66e+03  1.72e+02  3.05e-05
+  15   1.7380843e+07  -1.3763868e+08  5.35e+03  3.30e+03  5.74e+01  9.73e-05
+  16   4.3302448e+06  -7.8439105e+07  3.42e+03  2.11e+03  2.88e+01  2.05e-04
+  17  -7.5450608e+06  -4.9369042e+07  1.66e+03  1.02e+03  1.48e+01  4.49e-04
+  18  -1.3004619e+07  -3.1286284e+07  7.88e+02  4.86e+02  6.27e+00  1.21e-03
+  19  -1.4705319e+07  -2.5481285e+07  5.71e+02  3.52e+02  3.26e+00  2.72e-03
+  20  -1.6373868e+07  -2.4504088e+07  3.76e+02  2.31e+02  2.72e+00  3.37e-03
+  21  -1.7031511e+07  -2.2376104e+07  2.91e+02  1.79e+02  1.62e+00  6.30e-03
+  22  -1.7486957e+07  -2.2169714e+07  2.34e+02  1.44e+02  1.51e+00  6.83e-03
+  23  -1.7976976e+07  -2.0561741e+07  1.69e+02  1.04e+02  6.72e-01  1.64e-02
+  24  -1.8330876e+07  -2.0342766e+07  1.23e+02  7.59e+01  5.57e-01  2.01e-02
+  25  -1.8722853e+07  -1.9969242e+07  7.08e+01  4.36e+01  3.66e-01  3.21e-02
+  26  -1.8895176e+07  -1.9674743e+07  4.51e+01  2.78e+01  2.26e-01  5.49e-02
+  27  -1.8985701e+07  -1.9472258e+07  3.23e+01  1.99e+01  1.27e-01  1.04e-01
+  28  -1.9085811e+07  -1.9409359e+07  1.95e+01  1.20e+01  9.28e-02  1.44e-01
+  29  -1.9127819e+07  -1.9364532e+07  1.37e+01  8.42e+00  7.00e-02  1.94e-01
+  30  -1.9164376e+07  -1.9302595e+07  8.66e+00  5.33e+00  3.84e-02  3.71e-01
+  31  -1.9187091e+07  -1.9275751e+07  5.81e+00  3.57e+00  2.36e-02  6.15e-01
+  32  -1.9202423e+07  -1.9263101e+07  3.96e+00  2.42e+00  1.63e-02  8.96e-01
+  33  -1.9206505e+07  -1.9251706e+07  3.48e+00  2.13e+00  9.55e-03  1.54e+00
+  34  -1.9210885e+07  -1.9245516e+07  2.99e+00  1.83e+00  5.22e-03  2.69e+00
+  35  -1.9215680e+07  -1.9243424e+07  2.49e+00  1.52e+00  3.57e-03  3.66e+00
+  36  -1.9220052e+07  -1.9241945e+07  2.01e+00  1.23e+00  2.52e-03  4.80e+00
+  37  -1.9222573e+07  -1.9239867e+07  1.73e+00  1.05e+00  1.23e-03  8.10e+00
+  38  -1.9226829e+07  -1.9239019e+07  1.25e+00  7.42e-01  8.63e-04  1.08e+01
+  39  -1.9231387e+07  -1.9237886e+07  7.17e-01  4.21e-01  2.74e-04  2.05e+01
+  40  -1.9233144e+07  -1.9237603e+07  5.09e-01  2.84e-01  2.03e-04  2.51e+01
+  41  -1.9234372e+07  -1.9236583e+07  3.26e-01  1.77e-01  3.21e-05  1.07e+02
+Barrier time = 2.34 sec. (1567.22 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:50:23 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:50:25 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 15:50:33 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 15:50:41 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.04 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.03 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:50:59 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:51:00 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 15:51:08 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.05 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.04 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:51:40 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:51:42 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 15:51:49 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.04 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.03 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:55:03 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:55:05 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 15:55:12 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.04 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.03 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:55:44 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:55:45 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 15:55:53 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.05 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 1540
+Total time for automatic ordering = 0.00 sec. (0.03 ticks)
+Barrier time = 0.00 sec. (0.08 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:57:45 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:57:46 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 15:57:54 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.04 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.03 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:58:53 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 15:58:55 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 15:59:03 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.05 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.04 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:00:34 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:00:35 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:00:43 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.05 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.04 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:01:19 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:01:20 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:01:28 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.04 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 1035
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.02 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 6
+  Rows in Factor            = 46
+  Integer space required    = 46
+  Total non-zeros in factor = 1081
+  Total FP ops to factor    = 33511
+Barrier time = 0.00 sec. (0.08 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:02:10 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:02:12 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:02:19 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.05 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.04 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:03:39 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:03:41 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:03:48 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.04 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 1035
+Total time for automatic ordering = 0.00 sec. (0.02 ticks)
+Barrier time = 0.00 sec. (0.06 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:04:48 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:04:49 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:04:57 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.05 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.04 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:06:19 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:06:21 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:06:28 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.04 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 1035
+Total time for automatic ordering = 0.00 sec. (0.02 ticks)
+Barrier time = 0.00 sec. (0.06 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:07:26 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:07:28 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:07:36 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.05 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.04 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:08:09 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:08:11 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:08:19 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.05 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 1485
+Total time for automatic ordering = 0.00 sec. (0.03 ticks)
+Barrier time = 0.00 sec. (0.07 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:11:18 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:11:20 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:11:27 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.04 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 1035
+Total time for automatic ordering = 0.00 sec. (0.02 ticks)
+Barrier time = 0.00 sec. (0.06 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:12:28 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:12:29 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:12:37 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.04 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.03 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:16:19 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:16:20 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:16:28 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.05 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 1540
+Total time for automatic ordering = 0.00 sec. (0.03 ticks)
+Barrier time = 0.00 sec. (0.08 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:18:08 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:18:09 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:18:17 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.03 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 741
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.02 ticks)
+Barrier time = 0.00 sec. (0.05 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:19:33 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:19:34 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:19:41 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:21:24 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.09 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.07 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:24:59 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:25:01 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:25:08 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:27:56 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.12 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.08 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:33:12 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:33:14 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:33:16 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.03 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 465
+Total time for automatic ordering = 0.00 sec. (0.01 ticks)
+Barrier time = 0.00 sec. (0.04 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:33:57 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:33:59 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:34:01 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.03 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.02 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:34:42 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:34:44 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:34:51 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:37:28 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.12 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 4560
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.09 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 6
+  Rows in Factor            = 96
+  Integer space required    = 96
+  Total non-zeros in factor = 4656
+  Total FP ops to factor    = 299536
+Barrier time = 0.00 sec. (0.22 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:45:04 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:45:06 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:45:08 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.03 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 465
+Total time for automatic ordering = 0.00 sec. (0.01 ticks)
+Barrier time = 0.00 sec. (0.04 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:46:13 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:46:15 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:46:18 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.03 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.02 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:48:06 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:48:08 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:48:11 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.03 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 465
+Total time for automatic ordering = 0.00 sec. (0.01 ticks)
+Barrier time = 0.00 sec. (0.04 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:48:40 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:48:42 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:48:49 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:51:24 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.12 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 4560
+Total time for automatic ordering = 0.00 sec. (0.09 ticks)
+Barrier time = 0.00 sec. (0.18 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:53:13 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 16:53:15 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:53:22 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 16:55:05 2019
+
+Presolve time = 0.00 sec. (0.09 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 17:00:03 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 17:00:04 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 17:00:07 2019
+
+Tried aggregator 0 times.
+Reduced presolve eliminated 28 rows and 29 columns.
+Reduced LP has 2 rows, 6 columns, and 7 nonzeros.
+Presolve time = 0.00 sec. (0.01 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 1
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.00 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 6
+  Rows in Factor            = 2
+  Integer space required    = 2
+  Total non-zeros in factor = 3
+  Total FP ops to factor    = 5
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0  -5.4445221e+06  -4.3755967e+06  6.98e+02  7.67e+02  2.13e-14  1.00e+00
+ Barrier aborted.
+Barrier time = 0.00 sec. (0.00 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 17:00:43 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 17:00:45 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 17:00:52 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 17:02:35 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.09 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.07 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 17:03:32 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Wed Apr 10 17:03:34 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 17:03:41 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Wed Apr 10 17:06:16 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.12 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.08 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:11:42 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:11:45 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:11:52 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:14:20 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.12 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 4560
+Total time for automatic ordering = 0.00 sec. (0.09 ticks)
+Barrier time = 0.00 sec. (0.18 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:15:29 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:15:32 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:15:41 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:16:53 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.12 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.08 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:17:37 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:17:38 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:17:45 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:18:15 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.09 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.06 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:20:57 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:20:59 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:21:07 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:23:47 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.12 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.08 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:25:53 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:25:55 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:26:02 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:27:47 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.09 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.07 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:29:48 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:29:49 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:29:55 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:33:53 2019
+
+Tried aggregator 0 times.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.12 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Barrier time = 0.00 sec. (0.08 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:53:05 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:53:06 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:53:09 2019
+
+Tried aggregator 0 times.
+Reduced presolve eliminated 16 rows and 16 columns.
+Reduced LP has 6 rows, 17 columns, and 22 nonzeros.
+Presolve time = 0.00 sec. (0.01 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 15
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.00 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 6
+  Rows in Factor            = 6
+  Integer space required    = 6
+  Total non-zeros in factor = 21
+  Total FP ops to factor    = 91
+Barrier time = 0.00 sec. (0.01 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:54:37 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:54:38 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:54:41 2019
+
+Tried aggregator 0 times.
+Reduced presolve eliminated 16 rows and 16 columns.
+Reduced LP has 6 rows, 17 columns, and 22 nonzeros.
+Presolve time = 0.00 sec. (0.01 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 15
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.00 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 6
+  Rows in Factor            = 6
+  Integer space required    = 6
+  Total non-zeros in factor = 21
+  Total FP ops to factor    = 91
+Barrier time = 0.00 sec. (0.01 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:55:33 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 08:55:34 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 08:55:37 2019
+
+Tried aggregator 0 times.
+Reduced presolve eliminated 16 rows and 16 columns.
+Reduced LP has 6 rows, 17 columns, and 22 nonzeros.
+Presolve time = 0.00 sec. (0.01 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 15
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.00 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 6
+  Rows in Factor            = 6
+  Integer space required    = 6
+  Total non-zeros in factor = 21
+  Total FP ops to factor    = 91
+Barrier time = 0.00 sec. (0.01 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 09:00:36 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 09:00:37 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 09:00:40 2019
+
+Tried aggregator 0 times.
+Reduced presolve eliminated 16 rows and 16 columns.
+Reduced LP has 6 rows, 17 columns, and 22 nonzeros.
+Presolve time = 0.00 sec. (0.01 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 15
+Total time for automatic ordering = 0.00 sec. (0.00 ticks)
+Barrier time = 0.00 sec. (0.01 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 09:01:06 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 09:01:08 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 09:01:11 2019
+
+Tried aggregator 0 times.
+Reduced presolve eliminated 16 rows and 16 columns.
+Reduced LP has 6 rows, 17 columns, and 22 nonzeros.
+Presolve time = 0.00 sec. (0.01 ticks)
+Parallel mode: using up to 6 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 15
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.00 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 6
+  Rows in Factor            = 6
+  Integer space required    = 6
+  Total non-zeros in factor = 21
+  Total FP ops to factor    = 91
+Barrier time = 0.00 sec. (0.01 ticks)
+
+Dual simplex solved model.
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 09:03:34 2019
+
+
+Log for '' Clone_1 (V12.6.3.0) Thu Apr 11 09:03:36 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 09:03:43 2019
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 09:05:27 2019
+
+Presolve time = 0.00 sec. (0.09 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'parc_complet.lp-pulp.lp' Clone_1 (V12.6.3.0) Thu Apr 11 09:07:35 2019
+
+Tried aggregator 0 times.
+Reduced presolve eliminated 142 rows and 142 columns.
+Reduced LP has 44694 rows, 16432 columns, and 137903 nonzeros.
+Presolve time = 0.02 sec. (17.06 ticks)
+Parallel mode: using up to 6 threads for barrier.
+
+***NOTE: Found 7 dense columns.
+
+Number of nonzeros in lower triangle of A*A' = 497357
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.04 sec. (32.05 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 6
+  Rows in Factor            = 44701
+  Integer space required    = 293820
+  Total non-zeros in factor = 2768777
+  Total FP ops to factor    = 334663607
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   3.7903393e+16  -1.1385492e+17  7.16e+12  4.41e+12  5.67e+10  1.00e+00
+   1   9.1028065e+15  -6.7905047e+16  2.10e+12  1.30e+12  3.32e+10  1.95e-13
+   2   3.6022215e+15  -1.3422570e+16  8.98e+11  5.53e+11  6.38e+09  1.03e-13
+   3   1.4336676e+14  -2.3386389e+15  9.90e+10  6.10e+10  9.96e+08  1.10e-12
+   4   5.6333376e+12  -3.0315845e+14  4.86e+09  2.99e+09  1.29e+08  9.73e-12
+   5   5.9667000e+11  -2.1817862e+13  5.45e+08  3.36e+08  9.24e+06  1.59e-10
+   6   1.6355116e+11  -2.8688998e+12  1.22e+08  7.49e+07  1.23e+06  1.27e-09
+   7   4.9181189e+10  -7.7026968e+11  2.05e+07  1.26e+07  3.38e+05  4.99e-09
+   8   1.8864666e+10  -1.4811205e+11  2.84e+06  1.75e+06  6.99e+04  2.82e-08
+   9   7.0165493e+09  -3.1186472e+10  8.07e+05  4.97e+05  1.56e+04  1.49e-07
+  10   1.9106602e+09  -1.4256095e+10  2.57e+05  1.58e+05  6.99e+03  3.97e-07
+  11   4.6711024e+08  -4.9082822e+09  6.84e+04  4.22e+04  2.39e+03  1.69e-06
+  12   1.4203284e+08  -2.0711687e+09  2.51e+04  1.54e+04  9.94e+02  4.86e-06
+  13   6.7842382e+07  -1.0198266e+09  1.24e+04  7.63e+03  4.88e+02  1.06e-05
+  14   2.3936505e+07  -3.3600905e+08  5.68e+03  3.50e+03  1.57e+02  3.80e-05
+  15   5.4416398e+06  -1.2939026e+08  3.17e+03  1.95e+03  5.49e+01  1.18e-04
+  16  -2.4647469e+06  -7.5998177e+07  2.08e+03  1.28e+03  2.87e+01  2.39e-04
+  17  -8.0320195e+06  -4.6817223e+07  1.36e+03  8.36e+02  1.41e+01  5.67e-04
+  18  -1.2705803e+07  -3.3970699e+07  7.19e+02  4.43e+02  7.84e+00  1.10e-03
+  19  -1.4694890e+07  -2.6561615e+07  4.87e+02  3.00e+02  3.99e+00  2.54e-03
+  20  -1.6418879e+07  -2.5546776e+07  3.06e+02  1.88e+02  3.43e+00  3.03e-03
+  21  -1.7067727e+07  -2.3400089e+07  2.31e+02  1.42e+02  2.29e+00  4.85e-03
+  22  -1.7538730e+07  -2.3188642e+07  1.78e+02  1.10e+02  2.18e+00  5.15e-03
+  23  -1.8065088e+07  -2.1007411e+07  1.20e+02  7.42e+01  9.98e-01  1.18e-02
+  24  -1.8319735e+07  -2.0541743e+07  9.51e+01  5.86e+01  7.30e-01  1.68e-02
+  25  -1.8729926e+07  -2.0166847e+07  5.20e+01  3.20e+01  5.22e-01  2.45e-02
+  26  -1.8892196e+07  -1.9798935e+07  3.37e+01  2.08e+01  3.25e-01  4.21e-02
+  27  -1.8955663e+07  -1.9616229e+07  2.73e+01  1.68e+01  2.22e-01  6.44e-02
+  28  -1.9009200e+07  -1.9560138e+07  2.23e+01  1.37e+01  1.88e-01  7.68e-02
+  29  -1.9035974e+07  -1.9481085e+07  1.98e+01  1.22e+01  1.40e-01  1.06e-01
+  30  -1.9097370e+07  -1.9407020e+07  1.44e+01  8.84e+00  9.32e-02  1.60e-01
+  31  -1.9145422e+07  -1.9327475e+07  1.02e+01  6.29e+00  4.14e-02  3.76e-01
+  32  -1.9180113e+07  -1.9308219e+07  7.43e+00  4.57e+00  2.69e-02  5.61e-01
+  33  -1.9205967e+07  -1.9292131e+07  5.31e+00  3.26e+00  1.55e-02  9.29e-01
+  34  -1.9213757e+07  -1.9284061e+07  4.66e+00  2.86e+00  9.92e-03  1.37e+00
+  35  -1.9226543e+07  -1.9279676e+07  3.62e+00  2.22e+00  6.71e-03  1.88e+00
+  36  -1.9235186e+07  -1.9276952e+07  2.89e+00  1.77e+00  4.99e-03  2.37e+00
+  37  -1.9241683e+07  -1.9274165e+07  2.33e+00  1.42e+00  3.44e-03  3.20e+00
+  38  -1.9248822e+07  -1.9271563e+07  1.69e+00  1.02e+00  2.15e-03  4.60e+00
+  39  -1.9256858e+07  -1.9268958e+07  9.79e-01  5.61e-01  1.01e-03  8.10e+00
+  40  -1.9261101e+07  -1.9266282e+07  5.18e-01  2.82e-01  2.51e-04  2.79e+01
+  41  -1.9262925e+07  -1.9265794e+07  3.35e-01  1.68e-01  6.84e-05  5.28e+01
+  42  -1.9263984e+07  -1.9265482e+07  2.37e-01  9.33e-02  2.46e-05  1.04e+02
+  43  -1.9264448e+07  -1.9265269e+07  2.02e-01  5.79e-02  5.61e-06  2.81e+02
+  44  -1.9264730e+07  -1.9265202e+07  2.85e-01  3.53e-02  1.81e-06  5.78e+02
+  45  -1.9264977e+07  -1.9265199e+07  2.27e+00  1.67e-02  5.85e-07  6.23e+02
+  46  -1.9265100e+07  -1.9265149e+07  5.43e-01  3.98e-03  1.43e-07  3.36e+03
+ Barrier aborted.
+Barrier time = 2.71 sec. (1755.35 ticks)
+
+Dual simplex solved model.
+

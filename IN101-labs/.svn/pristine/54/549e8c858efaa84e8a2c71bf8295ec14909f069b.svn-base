@@ -1,0 +1,67 @@
+#include "queue_map.h"
+#include <stdio.h>
+#include "loader.h"
+#include <stdlib.h>
+
+
+
+int main(void){
+	
+	
+	FILE *p_file = NULL;
+	p_file = fopen("./data/soko1.in","r");
+	game_map *map_struct=load(p_file);
+	
+	
+	qcell_map *first_configuration=malloc(sizeof(qcell_map));
+	
+	(*first_configuration).map_struct=map_struct;
+	(*first_configuration).next=NULL;
+	(*first_configuration).mother=NULL;
+	(*first_configuration).action='\0';
+	(*first_configuration).depth=0;
+	
+	
+	queue *map_queue = qnil();
+	
+	enqueue(map_queue,first_configuration);
+
+	FILE *p_file2 = NULL;
+	p_file2 = fopen("./data/soko_dumb.in","r");
+	game_map *map_struct2=load(p_file2);
+
+	qcell_map *second_configuration=malloc(sizeof(qcell_map));
+	
+	(*second_configuration).map_struct=map_struct2;
+	(*second_configuration).next=NULL;
+	(*second_configuration).mother=NULL;
+	(*second_configuration).action='\0';
+
+	enqueue(map_queue,second_configuration);
+	
+	
+	
+	print_queue(map_queue);
+	
+	
+	qcell_map *configuration= dequeue(map_queue);
+
+	//~ print_map((*configuration).map_struct);
+	
+	//~ print_queue(map_queue);
+	
+
+	qcell_map *configuration2= dequeue(map_queue);
+	
+	
+	print_queue(map_queue);
+	
+	free(first_configuration);
+	free(second_configuration);
+	//~ print_map((*configuration2).map_struct);
+	//~ print_queue(map_queue);
+	//~ qcell_map *configuration3=dequeue(map_queue);
+	
+	
+	return 0;
+	} 

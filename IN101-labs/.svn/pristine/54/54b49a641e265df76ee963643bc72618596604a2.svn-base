@@ -1,0 +1,333 @@
+#include "sokoban.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void print_map(game_map *map_struct){
+	
+	//get data from map structure
+	int width=(*map_struct).width;
+    int height=(*map_struct).height;
+    char *map_array=(*map_struct).map_array;
+    
+    
+    printf("map dimensions: %d x %d\n", width, height);
+
+    printf("Map array:\n");	
+    //print map on terminal
+    int counter=(width-1);
+    for (int i = 0; i <= width*height; i++){
+	printf("%c",map_array[i]);
+		if (i==counter){
+		printf("\n");
+		counter+=width;
+		}
+	}
+	printf("Player position in the map array %d \n",(*map_struct).position);
+}
+
+
+game_map *move(game_map *map_struct, char direction){
+	
+	
+	int width=(*map_struct).width;
+    int height=(*map_struct).height;
+    char *map_array=(*map_struct).map_array;
+	int position=(*map_struct).position;
+	
+	
+	
+	char *new_map_array=map_array;
+	int new_position=0;
+	
+	//variable containing the movement to perform
+	int mov;
+	
+	//define the movements
+	if (direction==NORTH){
+		mov=-width;
+		}
+	else if (direction==SOUTH){
+		mov=width;
+		}
+	else if (direction==EAST){
+		mov=1;
+		}
+	else if (direction==WEST){
+		mov=-1;
+		}
+	else{
+		mov=0;
+		}
+	
+	//CONDITIONS//
+	
+	//1- CASES IN WHICH PLAYER CANT MOVE
+	
+	
+	//if has a wall on the direction
+	if (map_array[position+mov] == WALL){
+		return map_struct;
+		}  
+	
+	//if player is has a BOX or BOX_ON on top which has BOX, BOX_ON or WALL on top
+	
+	if (((map_array[position+(mov*2)]==WALL)||(map_array[position+(mov*2)]==BOX)||(map_array[position+(mov*2)]==BOX_ON)) && ((map_array[position+mov]==BOX)||(map_array[position+mov]==BOX_ON))){
+
+		return map_struct;
+		}  
+
+	//2- CASES IN WHICH PLAYER CAN MOVE
+	
+	
+	//
+	//if next space is CELL
+	if (map_array[position+mov]== CELL){
+		new_position=(position+mov);
+		new_map_array[new_position]=BOY;
+		
+		// IF BOY WAS BOY_ON
+		if (map_array[position] == BOY){
+
+			new_map_array[position]=CELL;
+			}
+		else{
+
+			new_map_array[position]=CELL_DEST;
+			}
+		}  
+		
+	//if next space is CELL_DEST
+	else if (map_array[position+mov]== CELL_DEST){
+
+			new_position=(position+mov);    
+			new_map_array[new_position]=BOY_ON;
+		// IF BOY WAS BOY_ON
+		if (map_array[position] == BOY){
+			new_map_array[position]=CELL;
+			}
+		else{
+			new_map_array[position]=CELL_DEST;
+			}
+		}
+		
+	//if next cell is BOX or BOX_ON and the cell after is CELL or CELL_DEST
+	else if (((map_array[position+mov]==BOX)||(map_array[position+mov]==BOX_ON))&&((map_array[position+2*mov]==CELL)||(map_array[position+2*mov]==CELL_DEST))){
+
+			new_position=(position+mov);
+		// IF BOY WAS BOY_ON
+		if (map_array[position] == BOY){
+			new_map_array[position]=CELL;
+			}
+		else{
+			new_map_array[position]=CELL_DEST;
+			}
+		// IF NEXT CELL WAS BOX_ON
+		if (map_array[position+mov] == BOX_ON){
+			new_map_array[position+mov]=BOY_ON;
+			}
+		else{
+			new_map_array[position+mov]=BOY;
+			}
+		// IF CELL AFTER NEXT CELL WAS CELL_DEST
+		if (map_array[position+2*mov] == CELL_DEST){
+			new_map_array[position+2*mov]=BOX_ON;
+			}
+		else{
+			new_map_array[position+2*mov]=BOX;
+			}
+		
+	}
+	
+	//allocate new map structure
+	game_map *new_map_struct=malloc(sizeof(game_map));
+	
+	// free previous map strucute
+	//free((*map_struct).map_array);
+	free(map_struct);
+	
+	
+	//fill in new map structure
+	(*new_map_struct).width=width;
+    (*new_map_struct).height=height;
+    (*new_map_struct).map_array=new_map_array;
+    (*new_map_struct).position=new_position;
+    
+    return new_map_struct;
+}
+//replay function 
+game_map *replay(game_map *map_struct,int num_of_mov,char *list_of_movs){
+	
+	//loop to perform the given movements
+	for (int i=0;i < num_of_mov;i++){
+		
+		game_map *map_struct1=move(map_struct,list_of_movs[i]);
+		map_struct=map_struct1;
+	}
+	
+	return map_struct;
+}
+
+game_map *move_solver(game_map *map_struct, char direction){
+	
+	
+	int width=(*map_struct).width;
+    int height=(*map_struct).height;
+	int position=(*map_struct).position;
+	
+	//copying the map array
+	char map_array[height*(width+2)];
+	for (int i=0;i<(width*height);i++){
+		
+		map_array[i]=((*map_struct).map_array)[i];
+	}
+	
+	
+	//creating map array for new map
+	char *new_map_array=malloc((height*(width+2))*sizeof(char));
+	
+	for (int i=0;i<(width*height);i++){
+		
+		new_map_array[i]=map_array[i];
+		
+		}
+	
+	int new_position=0;
+	
+	//variable containing the movement to perform
+	int mov;
+	
+	//define the movements
+	if (direction==NORTH){
+		mov=-width;
+		}
+	else if (direction==SOUTH){
+		mov=width;
+		}
+	else if (direction==EAST){
+		mov=1;
+		}
+	else if (direction==WEST){
+		mov=-1;
+		}
+	else{
+		mov=0;
+		}
+	
+	//CONDITIONS//
+	
+	//1- CASES IN WHICH PLAYER CANT MOVE
+	
+	
+	//if has a wall on the direction
+	if (map_array[position+mov] == WALL){
+		
+		//allocate new map structure
+		game_map *new_map_struct=malloc(sizeof(game_map));
+		
+		//fill in new map structure
+		(*new_map_struct).width=width;
+		(*new_map_struct).height=height;
+		(*new_map_struct).map_array=new_map_array;
+		(*new_map_struct).position=position;
+
+		return new_map_struct;
+		}  
+	
+	//if player is has a BOX or BOX_ON on top which has BOX, BOX_ON or WALL on top
+	
+	if (((map_array[position+(mov*2)]==WALL)||(map_array[position+(mov*2)]==BOX)||(map_array[position+(mov*2)]==BOX_ON)) && ((map_array[position+mov]==BOX)||(map_array[position+mov]==BOX_ON))){
+		
+		//allocate new map structure
+		game_map *new_map_struct=malloc(sizeof(game_map));
+		
+		
+		//fill in new map structure
+		(*new_map_struct).width=width;
+		(*new_map_struct).height=height;
+		(*new_map_struct).map_array=new_map_array;
+		(*new_map_struct).position=position;
+			
+		return new_map_struct;
+		}  
+
+	//2- CASES IN WHICH PLAYER CAN MOVE
+	
+	
+	//
+	//if next space is CELL
+	if (map_array[position+mov]== CELL){
+		
+		new_position=(position+mov);
+		new_map_array[new_position]=BOY;
+		
+		// IF BOY WAS BOY_ON
+		if (map_array[position] == BOY){
+
+			new_map_array[position]=CELL;
+			}
+		else{
+			
+			new_map_array[position]=CELL_DEST;
+			}
+		}  
+		
+	//if next space is CELL_DEST
+	else if (map_array[position+mov]== CELL_DEST){
+
+			new_position=(position+mov);    
+			new_map_array[new_position]=BOY_ON;
+		// IF BOY WAS BOY_ON
+		if (map_array[position] == BOY){
+			new_map_array[position]=CELL;
+			}
+		else{
+			new_map_array[position]=CELL_DEST;
+			}
+		}
+		
+	//if next cell is BOX or BOX_ON and the cell after is CELL or CELL_DEST
+	else if (((map_array[position+mov]==BOX)||(map_array[position+mov]==BOX_ON))&&((map_array[position+2*mov]==CELL)||(map_array[position+2*mov]==CELL_DEST))){
+
+
+			new_position=(position+mov);
+		// IF BOY WAS BOY_ON
+		if (map_array[position] == BOY){
+			new_map_array[position]=CELL;
+			}
+		else{
+			new_map_array[position]=CELL_DEST;
+			}
+		// IF NEXT CELL WAS BOX_ON
+		if (map_array[position+mov] == BOX_ON){
+			new_map_array[position+mov]=BOY_ON;
+			}
+		else{
+			new_map_array[position+mov]=BOY;
+			}
+		// IF CELL AFTER NEXT CELL WAS CELL_DEST
+		if (map_array[position+2*mov] == CELL_DEST){
+			new_map_array[position+2*mov]=BOX_ON;
+			}
+		else{
+			new_map_array[position+2*mov]=BOX;
+			}
+		
+	}
+	
+	//allocate new map structure
+	game_map *new_map_struct=malloc(sizeof(game_map));
+	
+	
+	//fill in new map structure
+	(*new_map_struct).width=width;
+    (*new_map_struct).height=height;
+    (*new_map_struct).map_array=new_map_array;
+    (*new_map_struct).position=new_position;
+    
+    return new_map_struct;
+}
+    
+	
+	
+

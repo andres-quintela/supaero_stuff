@@ -1,0 +1,41 @@
+#ifndef SOKOBAN_H
+#define SOKOBAN_H
+
+#include <stdbool.h>
+
+
+
+//define map symbols
+
+#define BOY '@'
+#define BOY_ON '+'
+#define BOX '$'
+#define BOX_ON '*'
+#define CELL_DEST '.'
+#define CELL ' '
+#define WALL '#'
+
+
+//define movements
+
+#define NORTH 'N'
+#define SOUTH 'S'
+#define EAST 'E'
+#define WEST 'W'
+
+
+//define map structure
+typedef struct game_map  game_map;
+
+struct game_map {
+    int height;
+    int width;
+    int position;  //array position of the player
+    char *map_array;
+};
+
+//print map function
+void print_map(game_map *map_struct);
+
+
+#endif

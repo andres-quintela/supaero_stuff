@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "sokoban.h"
+#include "loader.h"
+
+
+
+
+int main(int argc, char *argv[]) {
+
+ 
+    // open file. The filename is the first argument on the command
+    // line, hence stored in argv[1]
+    FILE *p_file = NULL;
+
+    p_file = fopen(argv[1], "r");
+
+    if (p_file == NULL) {
+        fprintf(stderr, "Cannot read file %s!\n", argv[1]);
+        exit(EXIT_FAILURE);
+    }
+    
+    //call load function and get map structure
+    game_map *map_struct=load(p_file);
+    
+    
+    int num_of_mov=atoi(argv[2]);
+    char *list_of_movs=argv[3];
+    
+    printf("%d",num_of_mov);
+    for (int i=0;i <= num_of_mov;i++){
+		
+		print_map(map_struct);
+		game_map *map_struct1=move(map_struct,list_of_movs[i]);
+		map_struct=map_struct1;
+		
+	
+		}
+		
+	
+	free((*map_struct).map_array);
+	free(map_struct);
+	return 0;	
+	}

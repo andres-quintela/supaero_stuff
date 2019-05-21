@@ -1,0 +1,92 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
+#include "sokoban.h"
+#include "linked_list_map.h"
+#include "queue_map.h"
+#include "solver.h"
+
+
+
+
+
+void create_children(qcell_map *current_configuration,linked_list_map *explored_list,queue *search_queue){
+	
+	char directions[4]={'N','S','E','W'};
+	
+	for (int i =0;i<4;i++){
+		
+		char dir = directions[i];
+		
+		//perform movement on the map
+		game_map *map_struct=move_solver((*current_configuration).map_struct,dir);
+		
+		
+		//if map has already been explored to nothing
+		if (is_map_explored(explored_list,map_struct)==true){
+			printf("map is explored\n");
+			printf("map is explored\n");
+			printf("map is explored\n");
+			printf("map is explored\n");
+			printf("map is explored\n");
+			break;
+			
+			}
+		//if map has not bee explored create new configuration cell and add it to search queue
+		else{
+		//create new configuration cell
+		qcell_map *configuration=malloc(sizeof(qcell_map));
+		(*configuration).map_struct=map_struct;
+		(*configuration).mother=current_configuration;
+		(*configuration).action=dir;
+		(*configuration).depth=(*current_configuration).depth+1;
+		
+		//add unexplored configuration to seach queue
+		enqueue(search_queue, configuration);
+		}
+	}
+}
+	
+
+bool is_map_explored(linked_list_map* explored_list, game_map *map_struct){
+	
+    
+    if (*explored_list==NULL){
+		return false;
+		}
+    
+    
+    //iterate over explored list to see if the map has been explored or not
+    linked_list_map list_loop= *explored_list; 
+	while (list_loop != NULL) {
+		
+		//check if map arrays are the same
+		if (strcmp((*(*list_loop).map_struct).map_array,(*map_struct).map_array)==0){
+			//~ printf("%d  %s\n",(*(*list_loop).map_struct).position,(*(*list_loop).map_struct).map_array);
+			//~ printf("%d  %s\n",(*map_struct).position,(*map_struct).map_array);
+			return true;
+			
+			}
+		list_loop = (*list_loop).next;
+	}
+	return false;
+}
+
+bool is_winning_map(qcell_map *current_configuration){
+	
+	//get data from map structure
+	char *map_array=(*(*current_configuration).map_struct).map_array;
+	
+	int width=(*(*current_configuration).map_struct).width;
+    int height=(*(*current_configuration).map_struct).height;
+    
+    //check if map is winning map or not
+	for (int i = 0; i <= width*height; i++){
+		if (map_array[i]==BOX){
+			return false;
+		}
+	}
+	return true;
+}
+

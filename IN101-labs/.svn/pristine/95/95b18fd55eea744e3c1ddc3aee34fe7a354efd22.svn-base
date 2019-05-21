@@ -1,0 +1,19 @@
+#include "bst-map.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+bst_tree *nil(void){
+	
+	
+	bst_tree *p_tree = malloc(sizeof(bst_tree));
+	
+	*p_tree=NULL;
+	
+	
+	return p_tree; 
+}
+
+

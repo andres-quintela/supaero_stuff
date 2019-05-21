@@ -1,0 +1,10 @@
+#ifndef LOADER_H
+#define LOADER_H
+
+#include "sokoban.h"
+
+// import map file and adapt it to game_map structure
+game_map *load(FILE *p_file);
+
+
+#endif

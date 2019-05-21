@@ -1,0 +1,253 @@
+\hypertarget{graph__char_8h}{\section{include/graph\-\_\-char.h File Reference}
+\label{graph__char_8h}\index{include/graph\-\_\-char.\-h@{include/graph\-\_\-char.\-h}}
+}
+
+
+Simple definition of graphs with vertices containing {\ttfamily char} values.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structedge}{edge}
+\begin{DoxyCompactList}\small\item\em The structure representing the edges of the graph. \end{DoxyCompactList}\item 
+struct \hyperlink{structvertex}{vertex}
+\begin{DoxyCompactList}\small\item\em The structure representing the vertices of the graph. \end{DoxyCompactList}\item 
+struct \hyperlink{structgraph}{graph}
+\begin{DoxyCompactList}\small\item\em The structure representing the graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{graph__char_8h_addb0affa0061a7c6cc7402fe2d20daf0}{M\-A\-X\-\_\-\-V\-E\-R\-T\-I\-C\-E\-S\-\_\-\-N\-B}~100
+\item 
+\#define \hyperlink{graph__char_8h_aee9979a47e386d3392d637d35c896114}{M\-A\-X\-\_\-\-N\-E\-I\-G\-H\-B\-O\-R\-S\-\_\-\-N\-B}~100
+\item 
+\#define \hyperlink{graph__char_8h_a956e2723d559858d08644ac99146e910}{I\-N\-F\-I\-N\-I\-T\-Y}~1000000
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{graph__char_8h_a2d64ff113ccd23a7d7828aff59a1a797}{typedef struct \hyperlink{structgraph}{graph} \hyperlink{graph__char_8h_a2d64ff113ccd23a7d7828aff59a1a797}{graph}}\label{graph__char_8h_a2d64ff113ccd23a7d7828aff59a1a797}
+
+\begin{DoxyCompactList}\small\item\em An alias to the struct representing the graph. \end{DoxyCompactList}\item 
+\hypertarget{graph__char_8h_ad0f5923379e298b172ea5ab8ae5b0eeb}{typedef struct \hyperlink{structvertex}{vertex} \hyperlink{graph__char_8h_ad0f5923379e298b172ea5ab8ae5b0eeb}{vertex}}\label{graph__char_8h_ad0f5923379e298b172ea5ab8ae5b0eeb}
+
+\begin{DoxyCompactList}\small\item\em An alias to the struct representing the vertices. \end{DoxyCompactList}\item 
+\hypertarget{graph__char_8h_a62e8ac20ad6459019691857781e5a4da}{typedef struct \hyperlink{structedge}{edge} \hyperlink{graph__char_8h_a62e8ac20ad6459019691857781e5a4da}{edge}}\label{graph__char_8h_a62e8ac20ad6459019691857781e5a4da}
+
+\begin{DoxyCompactList}\small\item\em An alias to the struct representing the edges. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{graph__char_8h_a5058d3f0f4cd8d6066e7292dbc05ceac}{create\-\_\-empty\-\_\-graph} (\hyperlink{structgraph}{graph} $\ast$$\ast$p\-\_\-p\-\_\-graph)
+\begin{DoxyCompactList}\small\item\em Create an empty graph. \end{DoxyCompactList}\item 
+void \hyperlink{graph__char_8h_a1184b27a98f9f9c8af4e94e61cc1ad23}{add\-\_\-vertex} (\hyperlink{structgraph}{graph} $\ast$p\-\_\-graph, char id)
+\begin{DoxyCompactList}\small\item\em Add a new vertex in the graph. \end{DoxyCompactList}\item 
+\hyperlink{structvertex}{vertex} $\ast$ \hyperlink{graph__char_8h_a7946f7718517948b2cb51df2bda97ae7}{get\-\_\-vertex} (\hyperlink{structgraph}{graph} $\ast$p\-\_\-graph, char id)
+\begin{DoxyCompactList}\small\item\em Get a vertex by its identifier. \end{DoxyCompactList}\item 
+void \hyperlink{graph__char_8h_a61072cfbdf09988bdf33a9065bf453e7}{add\-\_\-edge} (\hyperlink{structgraph}{graph} $\ast$p\-\_\-graph, char id\-\_\-source, char id\-\_\-dest, int weight)
+\begin{DoxyCompactList}\small\item\em Add an edge in the graph. \end{DoxyCompactList}\item 
+void \hyperlink{graph__char_8h_a9c1a633e62353c6c1d505bd3f38f90b3}{dijkstra} (\hyperlink{structgraph}{graph} $\ast$p\-\_\-graph, char id\-\_\-source)
+\begin{DoxyCompactList}\small\item\em Compute the shortest paths from a given vertex to the other vertices. \end{DoxyCompactList}\item 
+void \hyperlink{graph__char_8h_a7f7dcfeeae1094b2e264f858b5855317}{print\-\_\-graph} (\hyperlink{structgraph}{graph} $\ast$p\-\_\-graph)
+\begin{DoxyCompactList}\small\item\em Print the graph. \end{DoxyCompactList}\item 
+void \hyperlink{graph__char_8h_a62eb52172bf4adee21ff09bb6ed0ef58}{deallocate\-\_\-graph} (\hyperlink{structgraph}{graph} $\ast$p\-\_\-graph)
+\begin{DoxyCompactList}\small\item\em Deallocate the graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple definition of graphs with vertices containing {\ttfamily char} values. \begin{DoxyAuthor}{Author}
+Christophe Garion
+\end{DoxyAuthor}
+This is a simple definition of a graph containing {\ttfamily char} values implemented using adjacency lists represented by arrays. Warning\-: the vertices pointers should not be shared as deallocation of a graph deallocates the memory space reserved for the vertices!
+
+The A\-P\-I of the graph is defined as follows\-:
+
+
+\begin{DoxyItemize}
+\item a function to create an empty graph
+\item a function to add a vertex
+\item a function to get a pointer to a vertex
+\item a function to add an edge
+\item a function to compute shortest paths from a given vertex to all other vertices in the graph
+\item a function to print a graph
+\item a function to deallocate a graph 
+\end{DoxyItemize}
+
+\subsection{Macro Definition Documentation}
+\hypertarget{graph__char_8h_a956e2723d559858d08644ac99146e910}{\index{graph\-\_\-char.\-h@{graph\-\_\-char.\-h}!I\-N\-F\-I\-N\-I\-T\-Y@{I\-N\-F\-I\-N\-I\-T\-Y}}
+\index{I\-N\-F\-I\-N\-I\-T\-Y@{I\-N\-F\-I\-N\-I\-T\-Y}!graph_char.h@{graph\-\_\-char.\-h}}
+\subsubsection[{I\-N\-F\-I\-N\-I\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-F\-I\-N\-I\-T\-Y~1000000}}\label{graph__char_8h_a956e2723d559858d08644ac99146e910}
+A constant representing infinity \hypertarget{graph__char_8h_aee9979a47e386d3392d637d35c896114}{\index{graph\-\_\-char.\-h@{graph\-\_\-char.\-h}!M\-A\-X\-\_\-\-N\-E\-I\-G\-H\-B\-O\-R\-S\-\_\-\-N\-B@{M\-A\-X\-\_\-\-N\-E\-I\-G\-H\-B\-O\-R\-S\-\_\-\-N\-B}}
+\index{M\-A\-X\-\_\-\-N\-E\-I\-G\-H\-B\-O\-R\-S\-\_\-\-N\-B@{M\-A\-X\-\_\-\-N\-E\-I\-G\-H\-B\-O\-R\-S\-\_\-\-N\-B}!graph_char.h@{graph\-\_\-char.\-h}}
+\subsubsection[{M\-A\-X\-\_\-\-N\-E\-I\-G\-H\-B\-O\-R\-S\-\_\-\-N\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-\_\-\-N\-E\-I\-G\-H\-B\-O\-R\-S\-\_\-\-N\-B~100}}\label{graph__char_8h_aee9979a47e386d3392d637d35c896114}
+The maximum number of neighbors for a vertex. \hypertarget{graph__char_8h_addb0affa0061a7c6cc7402fe2d20daf0}{\index{graph\-\_\-char.\-h@{graph\-\_\-char.\-h}!M\-A\-X\-\_\-\-V\-E\-R\-T\-I\-C\-E\-S\-\_\-\-N\-B@{M\-A\-X\-\_\-\-V\-E\-R\-T\-I\-C\-E\-S\-\_\-\-N\-B}}
+\index{M\-A\-X\-\_\-\-V\-E\-R\-T\-I\-C\-E\-S\-\_\-\-N\-B@{M\-A\-X\-\_\-\-V\-E\-R\-T\-I\-C\-E\-S\-\_\-\-N\-B}!graph_char.h@{graph\-\_\-char.\-h}}
+\subsubsection[{M\-A\-X\-\_\-\-V\-E\-R\-T\-I\-C\-E\-S\-\_\-\-N\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-\_\-\-V\-E\-R\-T\-I\-C\-E\-S\-\_\-\-N\-B~100}}\label{graph__char_8h_addb0affa0061a7c6cc7402fe2d20daf0}
+The maximum number of vertices in the graph. 
+
+\subsection{Function Documentation}
+\hypertarget{graph__char_8h_a61072cfbdf09988bdf33a9065bf453e7}{\index{graph\-\_\-char.\-h@{graph\-\_\-char.\-h}!add\-\_\-edge@{add\-\_\-edge}}
+\index{add\-\_\-edge@{add\-\_\-edge}!graph_char.h@{graph\-\_\-char.\-h}}
+\subsubsection[{add\-\_\-edge}]{\setlength{\rightskip}{0pt plus 5cm}void add\-\_\-edge (
+\begin{DoxyParamCaption}
+\item[{{\bf graph} $\ast$}]{p\-\_\-graph, }
+\item[{char}]{id\-\_\-source, }
+\item[{char}]{id\-\_\-dest, }
+\item[{int}]{weight}
+\end{DoxyParamCaption}
+)}}\label{graph__char_8h_a61072cfbdf09988bdf33a9065bf453e7}
+
+
+Add an edge in the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-\_\-graph} & a pointer to the graph in which the edge has to be inserted \\
+\hline
+{\em id\-\_\-source} & the identifier of the source vertex \\
+\hline
+{\em id\-\_\-dest} & the identifier of the destination vertex \\
+\hline
+{\em weight} & the weight of the edge \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\ttfamily id\-\_\-source} and {\ttfamily id\-\_\-dest} should be valid vertices identifiers in the graph.
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+{\ttfamily id\-\_\-destination} is added in the adjacency list of {\ttfamily id\-\_\-source} with a weight of {\ttfamily weight}. 
+\end{DoxyPostcond}
+\hypertarget{graph__char_8h_a1184b27a98f9f9c8af4e94e61cc1ad23}{\index{graph\-\_\-char.\-h@{graph\-\_\-char.\-h}!add\-\_\-vertex@{add\-\_\-vertex}}
+\index{add\-\_\-vertex@{add\-\_\-vertex}!graph_char.h@{graph\-\_\-char.\-h}}
+\subsubsection[{add\-\_\-vertex}]{\setlength{\rightskip}{0pt plus 5cm}void add\-\_\-vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf graph} $\ast$}]{p\-\_\-graph, }
+\item[{char}]{id}
+\end{DoxyParamCaption}
+)}}\label{graph__char_8h_a1184b27a98f9f9c8af4e94e61cc1ad23}
+
+
+Add a new vertex in the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-\_\-graph} & a pointer to the graph in which the vertex has to be added \\
+\hline
+{\em id} & the identifier of the vertex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\ttfamily id} should not be an existing vertex identifier
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+A new vertex is added in the graph and its identifier is {\ttfamily id}. 
+\end{DoxyPostcond}
+\hypertarget{graph__char_8h_a5058d3f0f4cd8d6066e7292dbc05ceac}{\index{graph\-\_\-char.\-h@{graph\-\_\-char.\-h}!create\-\_\-empty\-\_\-graph@{create\-\_\-empty\-\_\-graph}}
+\index{create\-\_\-empty\-\_\-graph@{create\-\_\-empty\-\_\-graph}!graph_char.h@{graph\-\_\-char.\-h}}
+\subsubsection[{create\-\_\-empty\-\_\-graph}]{\setlength{\rightskip}{0pt plus 5cm}void create\-\_\-empty\-\_\-graph (
+\begin{DoxyParamCaption}
+\item[{{\bf graph} $\ast$$\ast$}]{p\-\_\-p\-\_\-graph}
+\end{DoxyParamCaption}
+)}}\label{graph__char_8h_a5058d3f0f4cd8d6066e7292dbc05ceac}
+
+
+Create an empty graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-\_\-p\-\_\-graph} & a pointer to a pointer to a graph \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\ttfamily p\-\_\-p\-\_\-graph} must not be null.
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The graph pointed by {\ttfamily $\ast$p\-\_\-p\-\_\-graph} is initialized as an empty graph (no vertex, no edge). 
+\end{DoxyPostcond}
+\hypertarget{graph__char_8h_a62eb52172bf4adee21ff09bb6ed0ef58}{\index{graph\-\_\-char.\-h@{graph\-\_\-char.\-h}!deallocate\-\_\-graph@{deallocate\-\_\-graph}}
+\index{deallocate\-\_\-graph@{deallocate\-\_\-graph}!graph_char.h@{graph\-\_\-char.\-h}}
+\subsubsection[{deallocate\-\_\-graph}]{\setlength{\rightskip}{0pt plus 5cm}void deallocate\-\_\-graph (
+\begin{DoxyParamCaption}
+\item[{{\bf graph} $\ast$}]{p\-\_\-graph}
+\end{DoxyParamCaption}
+)}}\label{graph__char_8h_a62eb52172bf4adee21ff09bb6ed0ef58}
+
+
+Deallocate the graph. 
+
+Deallocate each vertex and edge of the graph, as well as the graph structure itself.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-\_\-graph} & a pointer to the graph to be deallocated\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+After the call, the pointer {\ttfamily p\-\_\-graph} is no more valid. 
+\end{DoxyPostcond}
+\hypertarget{graph__char_8h_a9c1a633e62353c6c1d505bd3f38f90b3}{\index{graph\-\_\-char.\-h@{graph\-\_\-char.\-h}!dijkstra@{dijkstra}}
+\index{dijkstra@{dijkstra}!graph_char.h@{graph\-\_\-char.\-h}}
+\subsubsection[{dijkstra}]{\setlength{\rightskip}{0pt plus 5cm}void dijkstra (
+\begin{DoxyParamCaption}
+\item[{{\bf graph} $\ast$}]{p\-\_\-graph, }
+\item[{char}]{id\-\_\-source}
+\end{DoxyParamCaption}
+)}}\label{graph__char_8h_a9c1a633e62353c6c1d505bd3f38f90b3}
+
+
+Compute the shortest paths from a given vertex to the other vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-\_\-graph} & a pointer to the graph \\
+\hline
+{\em id\-\_\-source} & the identifier of the source vertex\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\ttfamily id\-\_\-source} should be a valid vertex identifier in the graph.
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+For each vertex in the graph, its minimum distance from {\ttfamily id\-\_\-source} is updated and correct and its predecessor field contains a pointer to the vertex predecessor in the shortest path from {\ttfamily id\-\_\-source}. 
+\end{DoxyPostcond}
+\hypertarget{graph__char_8h_a7946f7718517948b2cb51df2bda97ae7}{\index{graph\-\_\-char.\-h@{graph\-\_\-char.\-h}!get\-\_\-vertex@{get\-\_\-vertex}}
+\index{get\-\_\-vertex@{get\-\_\-vertex}!graph_char.h@{graph\-\_\-char.\-h}}
+\subsubsection[{get\-\_\-vertex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vertex}$\ast$ get\-\_\-vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf graph} $\ast$}]{p\-\_\-graph, }
+\item[{char}]{id}
+\end{DoxyParamCaption}
+)}}\label{graph__char_8h_a7946f7718517948b2cb51df2bda97ae7}
+
+
+Get a vertex by its identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-\_\-graph} & a pointer to the graph in which the vertex is searched \\
+\hline
+{\em id} & the identifier of the vertex\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the corresponding vertex if it exists in the graph, {\ttfamily N\-U\-L\-L} else 
+\end{DoxyReturn}
+\hypertarget{graph__char_8h_a7f7dcfeeae1094b2e264f858b5855317}{\index{graph\-\_\-char.\-h@{graph\-\_\-char.\-h}!print\-\_\-graph@{print\-\_\-graph}}
+\index{print\-\_\-graph@{print\-\_\-graph}!graph_char.h@{graph\-\_\-char.\-h}}
+\subsubsection[{print\-\_\-graph}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-graph (
+\begin{DoxyParamCaption}
+\item[{{\bf graph} $\ast$}]{p\-\_\-graph}
+\end{DoxyParamCaption}
+)}}\label{graph__char_8h_a7f7dcfeeae1094b2e264f858b5855317}
+
+
+Print the graph. 
+
+Prints each node of the graph and their adjacency lists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-\_\-graph} & a pointer to the graph to be printed \\
+\hline
+\end{DoxyParams}

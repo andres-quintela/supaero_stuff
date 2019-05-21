@@ -1,0 +1,8 @@
+gcc -g -std=c99 -Wall -o buggy-source ./buggy-source.c 
+
+#debugger
+
+ddd ./nameoffile.c
+
+gcc -g -std=c99 -Wall -I ./include -o ./bin/loader ./src/loader.c
+

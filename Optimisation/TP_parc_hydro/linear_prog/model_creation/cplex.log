@@ -1,0 +1,67 @@
+
+Log started (V12.6.3.0) Tue Apr  9 11:34:18 2019
+
+
+Problem 'vallee_hydraulique.lp-pulp.lp' read.
+Read time = 0.01 sec. (0.74 ticks)
+New value for mixed integer optimality gap tolerance: 0.01
+New value for time limit in seconds: 30
+Tried aggregator 3 times.
+MIP Presolve eliminated 2877 rows and 583 columns.
+MIP Presolve modified 16 coefficients.
+Aggregator did 522 substitutions.
+Reduced MIP has 5441 rows, 2255 columns, and 16768 nonzeros.
+Reduced MIP has 1824 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (18.33 ticks)
+Found incumbent of value 5327242.715640 after 0.02 sec. (21.88 ticks)
+Probing time = 0.01 sec. (1.55 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 279 coefficients.
+Reduced MIP has 5441 rows, 2255 columns, and 16768 nonzeros.
+Reduced MIP has 1824 binaries, 229 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (8.17 ticks)
+Probing time = 0.00 sec. (1.36 ticks)
+Clique table members: 2883.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.03 sec. (16.69 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                      5327242.7156  9308490.6287            74.73%
+*     0+    0                      5347801.3557  9308490.6287            74.06%
+      0     0  5964162.8820     9  5347801.3557  5964162.8820      620   11.53%
+*     0+    0                      5962302.9812  5964162.8820             0.03%
+
+Root node processing (before b&c):
+  Real time             =    0.10 sec. (72.08 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.10 sec. (72.08 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Integer optimal, tolerance (0.01/1e-06):  Objective =  5.9623029812e+06
+Current MIP best bound =  5.9641628820e+06 (gap = 1859.9, 0.03%)
+Solution time =    0.10 sec.  Iterations = 620  Nodes = 0 (1)
+Deterministic time = 72.09 ticks  (727.15 ticks/sec)
+
+MILP problem relaxed to LP with fixed integer variables using
+incumbent solution.
+Parallel mode: deterministic, using up to 8 threads for concurrent optimization.
+Tried aggregator 1 time.
+LP Presolve eliminated 8840 rows and 3360 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (2.42 ticks)
+
+Dual simplex - Optimal:  Objective =  5.9623029812e+06
+Solution time =    0.01 sec.  Iterations = 0 (0)
+Deterministic time = 5.18 ticks  (653.47 ticks/sec)
+
+
+Solution written to file 'vallee_hydraulique.lp-pulp.sol'.

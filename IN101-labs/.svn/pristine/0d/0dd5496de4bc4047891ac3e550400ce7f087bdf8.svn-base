@@ -1,0 +1,15 @@
+#include "sokoban.h"
+#include "queue_map.h"
+#include "linked_list_map.h"
+
+
+
+void create_children(qcell_map *current_configuration,linked_list_map *explored_list,queue *search_queue);
+
+
+
+bool is_map_explored(linked_list_map* explored_list, game_map *map_struct);
+
+
+bool is_winning_map(qcell_map *current_configuration);
+
